@@ -1,0 +1,551 @@
+id_sujet;statut_cas_temoin;age;sexe;tabagisme;exposition_professionnelle;imc;bronchopneumopathie_chronique;niveau_etudes;exposition_domestique_fumee;region
+1;Cas;56.7;Homme;Fumeur actuel;Exposition importante;19.8;Oui;Primaire;Oui;Ile-de-France
+2;Cas;86.6;Femme;Fumeur actuel;Exposition importante;29.9;Non;Secondaire;Oui;Centre-Val-de-Loire
+3;Cas;66.6;Homme;Jamais;Aucune exposition;23.3;Non;Primaire;Non;Centre-Val-de-Loire
+4;Cas;73.4;Homme;Fumeur actuel;Exposition importante;24.8;Oui;Primaire;Non;Hauts-de-France
+5;Cas;70.7;Homme;Fumeur actuel;Exposition faible;31.4;Non;Secondaire;Non;Hauts-de-France
+6;Cas;82.5;Homme;Fumeur actuel;Exposition importante;24.8;Non;Supérieur;Oui;Ile-de-France
+7;Cas;67.2;Homme;Fumeur actuel;Exposition faible;28.0;Oui;Primaire;Non;Ile-de-France
+8;Cas;55.5;Homme;Fumeur actuel;Exposition importante;26.8;Oui;Supérieur;Non;Centre-Val-de-Loire
+9;Cas;60.6;Femme;Fumeur actuel;Exposition importante;30.5;Non;Primaire;Oui;Centre-Val-de-Loire
+10;Cas;69.7;Homme;Fumeur actuel;Exposition faible;25.6;Non;Primaire;Oui;Centre-Val-de-Loire
+11;Cas;73.7;Homme;Fumeur actuel;Exposition importante;24.5;Oui;Supérieur;Oui;Ile-de-France
+12;Cas;63.0;Homme;Fumeur actuel;Aucune exposition;25.2;Oui;Supérieur;Oui;Hauts-de-France
+13;Cas;65.3;Homme;Fumeur actuel;Exposition faible;23.8;Non;Secondaire;Non;Centre-Val-de-Loire
+14;Cas;67.3;Homme;Jamais;Exposition importante;22.6;Oui;Secondaire;Non;Centre-Val-de-Loire
+15;Cas;73.4;Homme;Ancien fumeur;Exposition importante;28.0;Non;Secondaire;Non;Centre-Val-de-Loire
+16;Cas;76.5;Femme;Fumeur actuel;Aucune exposition;30.3;Oui;Primaire;Non;Centre-Val-de-Loire
+17;Cas;72.7;Homme;Ancien fumeur;Exposition faible;25.7;Oui;Primaire;Non;Centre-Val-de-Loire
+18;Cas;62.3;Homme;Fumeur actuel;Exposition faible;26.5;Non;Primaire;Non;Centre-Val-de-Loire
+19;Cas;76.9;Homme;Ancien fumeur;Exposition importante;26.5;Non;Secondaire;Non;Hauts-de-France
+20;Cas;59.5;Femme;Fumeur actuel;Exposition importante;24.9;Oui;Primaire;Oui;Centre-Val-de-Loire
+21;Cas;66.6;Homme;Fumeur actuel;Exposition importante;25.1;Non;Primaire;Non;Centre-Val-de-Loire
+22;Cas;71.1;Homme;Ancien fumeur;Exposition faible;23.2;Non;Secondaire;Non;Centre-Val-de-Loire
+23;Cas;86.5;Homme;Fumeur actuel;Aucune exposition;18.8;Non;Primaire;Oui;Ile-de-France
+24;Cas;46.2;Femme;Ancien fumeur;Aucune exposition;26.4;Non;Secondaire;Oui;Ile-de-France
+25;Cas;63.0;Homme;Fumeur actuel;Exposition faible;27.7;Non;Secondaire;Oui;Ile-de-France
+26;Cas;72.0;Femme;Fumeur actuel;Exposition importante;24.8;Oui;Primaire;Oui;Hauts-de-France
+27;Cas;71.8;Homme;Ancien fumeur;Exposition importante;31.3;Oui;Secondaire;Oui;Ile-de-France
+28;Cas;63.8;Femme;Fumeur actuel;Exposition importante;25.9;Oui;Secondaire;Non;Ile-de-France
+29;Cas;72.7;Homme;Fumeur actuel;Exposition importante;20.7;Non;Supérieur;Non;Centre-Val-de-Loire
+30;Cas;63.8;Homme;Fumeur actuel;Exposition importante;28.9;Non;Primaire;Non;Ile-de-France
+31;Cas;60.7;Homme;Fumeur actuel;Exposition importante;21.9;Non;Primaire;Non;Ile-de-France
+32;Cas;52.9;Femme;Jamais;Exposition importante;22.4;Oui;Primaire;Non;Ile-de-France
+33;Cas;69.5;Homme;Fumeur actuel;Exposition importante;25.3;Oui;Primaire;Non;Ile-de-France
+34;Cas;73.9;Homme;Fumeur actuel;Exposition faible;24.7;Non;Secondaire;Non;Ile-de-France
+35;Cas;74.5;Homme;Fumeur actuel;Exposition importante;23.9;Oui;Primaire;Oui;Ile-de-France
+36;Cas;76.2;Femme;Fumeur actuel;Exposition importante;26.2;Non;Primaire;Non;Centre-Val-de-Loire
+37;Cas;65.9;Homme;Fumeur actuel;Exposition importante;23.7;Oui;Primaire;Non;Ile-de-France
+38;Cas;72.9;Homme;Ancien fumeur;Exposition faible;23.8;Non;Secondaire;Non;Hauts-de-France
+39;Cas;79.5;Homme;Fumeur actuel;Exposition importante;20.7;Non;Primaire;Non;Hauts-de-France
+40;Cas;42.9;Homme;Fumeur actuel;Exposition faible;33.3;Non;Secondaire;Non;Hauts-de-France
+41;Cas;69.0;Homme;Fumeur actuel;Exposition importante;26.3;Oui;Supérieur;Non;Hauts-de-France
+42;Cas;63.6;Homme;Ancien fumeur;Exposition faible;22.0;Non;Secondaire;Non;Centre-Val-de-Loire
+43;Cas;56.1;Femme;Fumeur actuel;Exposition faible;29.8;Non;Primaire;Non;Hauts-de-France
+44;Cas;70.4;Homme;Fumeur actuel;Aucune exposition;18.4;Oui;Primaire;Oui;Centre-Val-de-Loire
+45;Cas;51.2;Homme;Fumeur actuel;Exposition faible;24.4;Oui;Primaire;Non;Centre-Val-de-Loire
+46;Cas;63.4;Femme;Ancien fumeur;Exposition importante;29.4;Non;Primaire;Non;Centre-Val-de-Loire
+47;Cas;77.4;Homme;Fumeur actuel;Aucune exposition;20.7;Oui;Primaire;Non;Ile-de-France
+48;Cas;62.8;Homme;Fumeur actuel;Exposition faible;30.3;Non;Primaire;Non;Centre-Val-de-Loire
+49;Cas;66.9;Homme;Ancien fumeur;Exposition faible;23.0;Non;Secondaire;Non;Centre-Val-de-Loire
+50;Cas;64.4;Homme;Ancien fumeur;Exposition importante;31.8;Oui;Secondaire;Non;Ile-de-France
+51;Cas;63.2;Homme;Jamais;Exposition faible;28.0;Non;Primaire;Oui;Ile-de-France
+52;Cas;68.8;Femme;Ancien fumeur;Exposition importante;27.5;Non;Secondaire;Non;Centre-Val-de-Loire
+53;Cas;57.6;Homme;Fumeur actuel;Exposition faible;28.6;Oui;Primaire;Oui;Hauts-de-France
+54;Cas;62.7;Homme;Jamais;Exposition faible;28.0;Non;Primaire;Oui;Centre-Val-de-Loire
+55;Cas;73.3;Homme;Fumeur actuel;Exposition importante;22.8;Non;Primaire;Non;Ile-de-France
+56;Cas;71.0;Homme;Ancien fumeur;Exposition faible;33.0;Oui;Secondaire;Non;Hauts-de-France
+57;Cas;65.8;Homme;Fumeur actuel;Aucune exposition;23.7;Oui;Secondaire;Oui;Hauts-de-France
+58;Cas;69.8;Homme;Ancien fumeur;Exposition importante;30.4;Oui;Secondaire;Non;Centre-Val-de-Loire
+59;Cas;56.2;Homme;Fumeur actuel;Exposition importante;23.8;Non;Primaire;Non;Centre-Val-de-Loire
+60;Cas;71.6;Homme;Fumeur actuel;Exposition faible;19.1;Non;Supérieur;Non;Hauts-de-France
+61;Cas;78.9;Homme;Fumeur actuel;Aucune exposition;26.3;Non;Secondaire;Oui;Centre-Val-de-Loire
+62;Cas;70.7;Homme;Ancien fumeur;Exposition importante;26.5;Oui;Secondaire;Oui;Hauts-de-France
+63;Cas;53.4;Femme;Fumeur actuel;Exposition faible;25.2;Non;Secondaire;Oui;Hauts-de-France
+64;Cas;50.4;Homme;Fumeur actuel;Exposition importante;25.7;Non;Secondaire;Oui;Hauts-de-France
+65;Cas;75.9;Homme;Fumeur actuel;Exposition faible;19.8;Oui;Primaire;Non;Centre-Val-de-Loire
+66;Cas;64.2;Femme;Jamais;Exposition importante;29.5;Non;Secondaire;Non;Centre-Val-de-Loire
+67;Cas;74.2;Femme;Fumeur actuel;Exposition faible;22.5;Non;Supérieur;Non;Centre-Val-de-Loire
+68;Cas;85.0;Homme;Jamais;Exposition importante;20.0;Oui;Primaire;Oui;Hauts-de-France
+69;Cas;66.5;Femme;Jamais;Exposition faible;21.8;Non;Supérieur;Non;Hauts-de-France
+70;Cas;72.0;Homme;Fumeur actuel;Exposition faible;19.9;Oui;Primaire;Oui;Centre-Val-de-Loire
+71;Cas;59.6;Femme;Fumeur actuel;Exposition faible;25.3;Non;Secondaire;Non;Centre-Val-de-Loire
+72;Cas;61.9;Homme;Ancien fumeur;Exposition faible;27.1;Non;Secondaire;Non;Ile-de-France
+73;Cas;66.7;Homme;Fumeur actuel;Exposition faible;28.3;Oui;Primaire;Non;Centre-Val-de-Loire
+74;Cas;71.0;Homme;Fumeur actuel;Exposition importante;23.5;Non;Secondaire;Oui;Centre-Val-de-Loire
+75;Cas;73.0;Femme;Fumeur actuel;Exposition importante;22.7;Oui;Secondaire;Non;Centre-Val-de-Loire
+76;Cas;76.6;Homme;Fumeur actuel;Exposition faible;28.6;Oui;Primaire;Non;Ile-de-France
+77;Cas;71.1;Homme;Fumeur actuel;Exposition importante;23.1;Oui;Primaire;Oui;Hauts-de-France
+78;Cas;56.6;Homme;Fumeur actuel;Exposition importante;25.5;Non;Primaire;Oui;Hauts-de-France
+79;Cas;75.5;Homme;Fumeur actuel;Exposition faible;30.1;Oui;Supérieur;Non;Hauts-de-France
+80;Cas;57.0;Homme;Fumeur actuel;Aucune exposition;28.7;Oui;Primaire;Non;Hauts-de-France
+81;Cas;70.5;Homme;Fumeur actuel;Aucune exposition;23.8;Non;Secondaire;Non;Hauts-de-France
+82;Cas;65.4;Femme;Jamais;Exposition importante;26.3;Non;Secondaire;Non;Hauts-de-France
+83;Cas;76.5;Homme;Fumeur actuel;Exposition faible;29.3;Non;Primaire;Non;Ile-de-France
+84;Cas;72.8;Homme;Fumeur actuel;Exposition importante;24.9;Non;Supérieur;Non;Centre-Val-de-Loire
+85;Cas;78.9;Homme;Fumeur actuel;Exposition faible;24.3;Oui;Supérieur;Oui;Centre-Val-de-Loire
+86;Cas;62.8;Femme;Fumeur actuel;Exposition faible;24.2;Non;Primaire;Non;Centre-Val-de-Loire
+87;Cas;67.8;Homme;Ancien fumeur;Exposition faible;16.5;Oui;Secondaire;Non;Centre-Val-de-Loire
+88;Cas;68.0;Homme;Fumeur actuel;Exposition importante;25.9;Non;Primaire;Non;Centre-Val-de-Loire
+89;Cas;58.1;Femme;Ancien fumeur;Aucune exposition;26.8;Oui;Secondaire;Non;Ile-de-France
+90;Cas;70.6;Homme;Fumeur actuel;Exposition faible;21.0;Non;Primaire;Oui;Hauts-de-France
+91;Cas;54.1;Femme;Fumeur actuel;Exposition faible;24.3;Non;Secondaire;Oui;Ile-de-France
+92;Cas;68.0;Homme;Fumeur actuel;Exposition importante;25.6;Non;Primaire;Oui;Ile-de-France
+93;Cas;65.7;Homme;Fumeur actuel;Exposition importante;26.1;Oui;Primaire;Oui;Centre-Val-de-Loire
+94;Cas;52.7;Homme;Fumeur actuel;Exposition faible;27.6;Non;Primaire;Non;Centre-Val-de-Loire
+95;Cas;63.2;Homme;Jamais;Exposition faible;24.0;Oui;Secondaire;Oui;Centre-Val-de-Loire
+96;Cas;66.0;Femme;Jamais;Exposition faible;24.0;Non;Secondaire;Non;Centre-Val-de-Loire
+97;Cas;70.8;Homme;Fumeur actuel;Exposition importante;33.4;Non;Secondaire;Non;Centre-Val-de-Loire
+98;Cas;83.0;Homme;Jamais;Aucune exposition;24.7;Oui;Primaire;Non;Hauts-de-France
+99;Cas;56.5;Homme;Fumeur actuel;Exposition importante;27.5;Non;Supérieur;Non;Centre-Val-de-Loire
+100;Cas;77.0;Femme;Fumeur actuel;Exposition importante;20.3;Oui;Primaire;Non;Centre-Val-de-Loire
+101;Cas;70.4;Homme;Fumeur actuel;Exposition importante;29.8;Non;Secondaire;Non;Hauts-de-France
+102;Cas;60.9;Femme;Jamais;Aucune exposition;22.6;Non;Supérieur;Non;Ile-de-France
+103;Cas;73.0;Homme;Fumeur actuel;Exposition faible;26.8;Non;Supérieur;Oui;Ile-de-France
+104;Cas;69.6;Homme;Fumeur actuel;Exposition importante;26.2;Non;Primaire;Non;Ile-de-France
+105;Cas;64.9;Homme;Ancien fumeur;Aucune exposition;26.8;Non;Secondaire;Non;Ile-de-France
+106;Cas;50.1;Homme;Fumeur actuel;Exposition faible;21.9;Non;Secondaire;Oui;Ile-de-France
+107;Cas;70.6;Homme;Fumeur actuel;Exposition faible;31.4;Non;Primaire;Non;Centre-Val-de-Loire
+108;Cas;84.1;Homme;Ancien fumeur;Exposition importante;23.4;Oui;Primaire;Non;Centre-Val-de-Loire
+109;Cas;66.6;Homme;Ancien fumeur;Exposition faible;24.7;Oui;Secondaire;Non;Hauts-de-France
+110;Cas;76.1;Homme;Fumeur actuel;Aucune exposition;25.3;Oui;Supérieur;Oui;Ile-de-France
+111;Cas;69.7;Homme;Jamais;Exposition faible;24.3;Non;Secondaire;Non;Hauts-de-France
+112;Cas;57.3;Homme;Jamais;Aucune exposition;23.4;Oui;Secondaire;Non;Ile-de-France
+113;Cas;73.7;Femme;Ancien fumeur;Aucune exposition;25.2;Oui;Secondaire;Oui;Hauts-de-France
+114;Cas;70.4;Homme;Fumeur actuel;Exposition importante;25.5;Oui;Primaire;Oui;Ile-de-France
+115;Cas;73.4;Homme;Fumeur actuel;Aucune exposition;25.1;Oui;Primaire;Non;Ile-de-France
+116;Cas;61.4;Homme;Fumeur actuel;Exposition faible;25.7;Non;Primaire;Non;Centre-Val-de-Loire
+117;Cas;70.3;Homme;Fumeur actuel;Aucune exposition;25.5;Non;Secondaire;Non;Centre-Val-de-Loire
+118;Cas;59.7;Homme;Fumeur actuel;Exposition importante;27.0;Oui;Supérieur;Oui;Centre-Val-de-Loire
+119;Cas;74.0;Femme;Ancien fumeur;Exposition faible;31.0;Oui;Secondaire;Oui;Ile-de-France
+120;Cas;69.5;Homme;Fumeur actuel;Aucune exposition;30.1;Non;Primaire;Non;Centre-Val-de-Loire
+121;Cas;53.2;Homme;Fumeur actuel;Exposition importante;24.3;Oui;Secondaire;Non;Hauts-de-France
+122;Cas;62.5;Homme;Fumeur actuel;Exposition faible;18.1;Oui;Primaire;Oui;Hauts-de-France
+123;Cas;73.6;Homme;Fumeur actuel;Aucune exposition;27.7;Non;Primaire;Oui;Ile-de-France
+124;Cas;72.4;Homme;Fumeur actuel;Exposition faible;27.6;Non;Secondaire;Non;Ile-de-France
+125;Cas;82.8;Homme;Jamais;Exposition importante;18.9;Non;Secondaire;Non;Centre-Val-de-Loire
+126;Cas;80.6;Femme;Ancien fumeur;Exposition faible;25.1;Non;Primaire;Oui;Centre-Val-de-Loire
+127;Cas;79.5;Homme;Fumeur actuel;Exposition faible;21.9;Non;Supérieur;Non;Ile-de-France
+128;Cas;79.8;Homme;Fumeur actuel;Aucune exposition;21.0;Oui;Primaire;Oui;Centre-Val-de-Loire
+129;Cas;76.8;Homme;Fumeur actuel;Aucune exposition;28.1;Non;Primaire;Oui;Ile-de-France
+130;Cas;80.8;Homme;Fumeur actuel;Exposition importante;24.9;Non;Primaire;Non;Ile-de-France
+131;Cas;48.8;Homme;Ancien fumeur;Aucune exposition;26.9;Oui;Primaire;Oui;Ile-de-France
+132;Cas;57.6;Femme;Fumeur actuel;Aucune exposition;35.8;Oui;Primaire;Oui;Hauts-de-France
+133;Cas;69.0;Homme;Fumeur actuel;Exposition importante;27.7;Non;Secondaire;Oui;Ile-de-France
+134;Cas;71.9;Homme;Ancien fumeur;Aucune exposition;25.0;Non;Primaire;Non;Centre-Val-de-Loire
+135;Cas;78.2;Femme;Fumeur actuel;Exposition faible;29.3;Oui;Supérieur;Oui;Centre-Val-de-Loire
+136;Cas;63.9;Homme;Fumeur actuel;Exposition faible;26.8;Oui;Primaire;Oui;Hauts-de-France
+137;Cas;72.8;Homme;Fumeur actuel;Exposition faible;21.6;Oui;Primaire;Non;Centre-Val-de-Loire
+138;Cas;78.4;Homme;Ancien fumeur;Exposition faible;21.9;Oui;Supérieur;Non;Ile-de-France
+139;Cas;80.1;Homme;Fumeur actuel;Exposition importante;26.8;Non;Secondaire;Non;Hauts-de-France
+140;Cas;75.1;Homme;Fumeur actuel;Exposition importante;24.1;Non;Secondaire;Oui;Hauts-de-France
+141;Cas;76.1;Femme;Fumeur actuel;Aucune exposition;29.5;Non;Primaire;Oui;Centre-Val-de-Loire
+142;Cas;67.6;Homme;Fumeur actuel;Aucune exposition;32.9;Non;Secondaire;Non;Ile-de-France
+143;Cas;64.7;Homme;Fumeur actuel;Exposition importante;26.0;Non;Supérieur;Non;Centre-Val-de-Loire
+144;Cas;66.3;Femme;Fumeur actuel;Aucune exposition;23.3;Oui;Supérieur;Non;Hauts-de-France
+145;Cas;63.3;Femme;Fumeur actuel;Exposition importante;16.0;Oui;Primaire;Non;Hauts-de-France
+146;Cas;54.0;Homme;Fumeur actuel;Exposition faible;24.3;Non;Secondaire;Oui;Centre-Val-de-Loire
+147;Cas;61.7;Homme;Fumeur actuel;Exposition faible;26.7;Oui;Primaire;Non;Centre-Val-de-Loire
+148;Cas;81.1;Homme;Ancien fumeur;Aucune exposition;32.0;Oui;Secondaire;Non;Centre-Val-de-Loire
+149;Cas;66.0;Homme;Fumeur actuel;Aucune exposition;24.4;Oui;Primaire;Non;Hauts-de-France
+150;Cas;84.1;Homme;Ancien fumeur;Exposition importante;22.2;Oui;Primaire;Non;Ile-de-France
+151;Cas;53.3;Homme;Fumeur actuel;Aucune exposition;27.8;Non;Secondaire;Non;Hauts-de-France
+152;Cas;67.6;Homme;Ancien fumeur;Exposition importante;19.7;Non;Supérieur;Non;Ile-de-France
+153;Cas;69.5;Homme;Fumeur actuel;Exposition faible;25.0;Oui;Secondaire;Non;Centre-Val-de-Loire
+154;Cas;60.7;Femme;Fumeur actuel;Exposition importante;19.5;Non;Primaire;Oui;Centre-Val-de-Loire
+155;Cas;64.2;Homme;Ancien fumeur;Exposition importante;24.0;Non;Secondaire;Oui;Centre-Val-de-Loire
+156;Cas;61.6;Femme;Jamais;Exposition faible;30.1;Oui;Primaire;Oui;Centre-Val-de-Loire
+157;Cas;70.1;Femme;Ancien fumeur;Aucune exposition;23.8;Non;Supérieur;Non;Centre-Val-de-Loire
+158;Cas;54.5;Homme;Fumeur actuel;Exposition faible;23.2;Non;Supérieur;Oui;Hauts-de-France
+159;Cas;71.1;Homme;Fumeur actuel;Aucune exposition;19.8;Oui;Secondaire;Oui;Centre-Val-de-Loire
+160;Cas;61.4;Homme;Fumeur actuel;Exposition faible;29.0;Oui;Secondaire;Oui;Ile-de-France
+161;Cas;72.4;Femme;Fumeur actuel;Exposition faible;23.2;Non;Secondaire;Oui;Ile-de-France
+162;Cas;41.8;Homme;Fumeur actuel;Exposition importante;25.0;Oui;Supérieur;Non;Ile-de-France
+163;Cas;50.7;Femme;Jamais;Exposition importante;22.6;Non;Secondaire;Non;Ile-de-France
+164;Cas;60.3;Femme;Fumeur actuel;Exposition importante;20.3;Non;Primaire;Non;Centre-Val-de-Loire
+165;Cas;55.6;Femme;Fumeur actuel;Exposition importante;25.3;Non;Secondaire;Oui;Ile-de-France
+166;Cas;67.0;Homme;Ancien fumeur;Aucune exposition;25.7;Oui;Secondaire;Oui;Centre-Val-de-Loire
+167;Cas;66.9;Femme;Fumeur actuel;Exposition importante;23.1;Non;Primaire;Non;Hauts-de-France
+168;Cas;71.1;Homme;Fumeur actuel;Exposition faible;24.4;Non;Primaire;Non;Hauts-de-France
+169;Cas;76.0;Femme;Fumeur actuel;Exposition faible;18.7;Oui;Secondaire;Oui;Hauts-de-France
+170;Cas;81.1;Homme;Fumeur actuel;Exposition importante;24.0;Oui;Secondaire;Non;Hauts-de-France
+171;Cas;71.0;Homme;Fumeur actuel;Exposition importante;22.6;Non;Secondaire;Non;Hauts-de-France
+172;Cas;54.5;Femme;Fumeur actuel;Aucune exposition;24.5;Non;Secondaire;Oui;Ile-de-France
+173;Cas;72.5;Homme;Ancien fumeur;Exposition importante;28.5;Non;Primaire;Oui;Ile-de-France
+174;Cas;61.4;Homme;Fumeur actuel;Aucune exposition;26.4;Non;Primaire;Oui;Centre-Val-de-Loire
+175;Cas;63.8;Femme;Jamais;Aucune exposition;28.7;Oui;Secondaire;Non;Centre-Val-de-Loire
+176;Cas;67.5;Femme;Ancien fumeur;Exposition importante;28.7;Oui;Secondaire;Non;Centre-Val-de-Loire
+177;Cas;60.7;Homme;Fumeur actuel;Aucune exposition;32.7;Non;Secondaire;Oui;Centre-Val-de-Loire
+178;Cas;63.6;Homme;Fumeur actuel;Exposition importante;28.2;Non;Secondaire;Oui;Ile-de-France
+179;Cas;86.2;Femme;Fumeur actuel;Exposition faible;24.6;Non;Supérieur;Oui;Hauts-de-France
+180;Cas;70.5;Homme;Fumeur actuel;Exposition importante;31.6;Non;Primaire;Non;Hauts-de-France
+181;Cas;72.3;Homme;Ancien fumeur;Aucune exposition;23.2;Oui;Primaire;Oui;Hauts-de-France
+182;Cas;70.6;Homme;Fumeur actuel;Exposition importante;28.3;Oui;Secondaire;Oui;Hauts-de-France
+183;Cas;76.2;Homme;Ancien fumeur;Aucune exposition;27.5;Non;Secondaire;Non;Hauts-de-France
+184;Cas;76.9;Homme;Fumeur actuel;Aucune exposition;25.4;Non;Secondaire;Oui;Ile-de-France
+185;Cas;61.5;Homme;Fumeur actuel;Exposition importante;26.3;Oui;Secondaire;Non;Ile-de-France
+186;Cas;67.7;Homme;Fumeur actuel;Exposition importante;21.9;Non;Secondaire;Oui;Hauts-de-France
+187;Cas;54.1;Homme;Fumeur actuel;Exposition faible;26.7;Non;Primaire;Oui;Centre-Val-de-Loire
+188;Cas;73.0;Homme;Ancien fumeur;Exposition importante;23.6;Non;Secondaire;Non;Hauts-de-France
+189;Cas;66.2;Femme;Ancien fumeur;Aucune exposition;22.1;Non;Secondaire;Non;Ile-de-France
+190;Cas;68.6;Femme;Fumeur actuel;Aucune exposition;27.9;Non;Secondaire;Non;Centre-Val-de-Loire
+191;Cas;79.1;Homme;Ancien fumeur;Exposition faible;27.3;Oui;Supérieur;Non;Hauts-de-France
+192;Cas;58.5;Homme;Fumeur actuel;Exposition faible;22.9;Non;Secondaire;Non;Ile-de-France
+193;Cas;81.9;Homme;Fumeur actuel;Exposition faible;22.1;Oui;Supérieur;Non;Ile-de-France
+194;Cas;60.7;Homme;Ancien fumeur;Exposition faible;24.2;Non;Secondaire;Oui;Centre-Val-de-Loire
+195;Cas;68.5;Homme;Fumeur actuel;Aucune exposition;22.0;Oui;Primaire;Non;Centre-Val-de-Loire
+196;Cas;70.8;Homme;Ancien fumeur;Exposition faible;22.8;Oui;Primaire;Oui;Centre-Val-de-Loire
+197;Cas;68.3;Homme;Ancien fumeur;Exposition faible;19.5;Oui;Secondaire;Non;Hauts-de-France
+198;Cas;67.9;Homme;Jamais;Exposition importante;28.1;Oui;Primaire;Non;Centre-Val-de-Loire
+199;Cas;57.6;Femme;Fumeur actuel;Exposition importante;31.8;Oui;Secondaire;Non;Ile-de-France
+200;Cas;59.9;Femme;Fumeur actuel;Aucune exposition;21.0;Non;Secondaire;Non;Ile-de-France
+201;Cas;63.1;Femme;Fumeur actuel;Exposition importante;23.0;Oui;Secondaire;Oui;Ile-de-France
+202;Cas;68.4;Homme;Fumeur actuel;Exposition importante;19.0;Oui;Primaire;Oui;Ile-de-France
+203;Cas;55.0;Homme;Ancien fumeur;Exposition importante;25.9;Non;Secondaire;Non;Hauts-de-France
+204;Cas;68.2;Femme;Ancien fumeur;Exposition importante;25.9;Oui;Secondaire;Oui;Ile-de-France
+205;Cas;55.6;Homme;Fumeur actuel;Exposition importante;25.5;Non;Secondaire;Non;Centre-Val-de-Loire
+206;Cas;68.5;Homme;Ancien fumeur;Exposition faible;27.1;Non;Supérieur;Non;Hauts-de-France
+207;Cas;63.3;Homme;Ancien fumeur;Aucune exposition;19.1;Non;Primaire;Non;Centre-Val-de-Loire
+208;Cas;57.2;Homme;Ancien fumeur;Exposition importante;22.5;Non;Supérieur;Non;Ile-de-France
+209;Cas;75.1;Homme;Fumeur actuel;Exposition faible;24.3;Oui;Secondaire;Non;Centre-Val-de-Loire
+210;Cas;72.7;Homme;Ancien fumeur;Exposition faible;26.3;Oui;Secondaire;Non;Hauts-de-France
+211;Cas;61.9;Homme;Ancien fumeur;Exposition importante;24.4;Oui;Primaire;Non;Centre-Val-de-Loire
+212;Cas;57.4;Homme;Ancien fumeur;Exposition faible;27.7;Oui;Supérieur;Non;Centre-Val-de-Loire
+213;Cas;67.9;Homme;Fumeur actuel;Aucune exposition;24.1;Non;Secondaire;Oui;Centre-Val-de-Loire
+214;Cas;64.1;Homme;Ancien fumeur;Exposition faible;36.6;Oui;Secondaire;Oui;Hauts-de-France
+215;Cas;79.5;Femme;Fumeur actuel;Exposition importante;24.7;Oui;Secondaire;Oui;Hauts-de-France
+216;Cas;65.0;Femme;Fumeur actuel;Aucune exposition;24.8;Non;Secondaire;Oui;Hauts-de-France
+217;Cas;69.8;Homme;Fumeur actuel;Exposition faible;29.3;Non;Secondaire;Oui;Ile-de-France
+218;Cas;70.8;Homme;Fumeur actuel;Exposition faible;28.7;Non;Secondaire;Oui;Hauts-de-France
+219;Cas;60.4;Homme;Fumeur actuel;Exposition importante;24.2;Non;Primaire;Non;Ile-de-France
+220;Cas;63.8;Homme;Fumeur actuel;Exposition importante;21.0;Oui;Supérieur;Non;Hauts-de-France
+221;Cas;75.5;Homme;Fumeur actuel;Exposition importante;26.6;Oui;Secondaire;Non;Hauts-de-France
+222;Cas;61.7;Homme;Jamais;Exposition importante;19.2;Non;Supérieur;Non;Ile-de-France
+223;Cas;80.2;Homme;Fumeur actuel;Exposition importante;28.8;Non;Primaire;Non;Centre-Val-de-Loire
+224;Cas;71.5;Homme;Fumeur actuel;Exposition importante;28.0;Non;Secondaire;Non;Ile-de-France
+225;Cas;72.0;Femme;Fumeur actuel;Exposition importante;26.5;Non;Primaire;Non;Hauts-de-France
+226;Cas;70.2;Femme;Fumeur actuel;Exposition faible;31.7;Oui;Secondaire;Oui;Centre-Val-de-Loire
+227;Cas;78.0;Femme;Fumeur actuel;Exposition importante;24.5;Non;Supérieur;Non;Centre-Val-de-Loire
+228;Cas;61.2;Homme;Fumeur actuel;Aucune exposition;27.0;Non;Secondaire;Oui;Centre-Val-de-Loire
+229;Cas;61.1;Femme;Fumeur actuel;Exposition importante;25.1;Non;Secondaire;Non;Ile-de-France
+230;Cas;60.3;Homme;Jamais;Exposition faible;27.4;Non;Primaire;Non;Centre-Val-de-Loire
+231;Témoin;58.4;Femme;Ancien fumeur;Exposition faible;27.0;Non;Supérieur;Non;Centre-Val-de-Loire
+232;Témoin;46.2;Homme;Jamais;Exposition importante;27.3;Oui;Primaire;Non;Centre-Val-de-Loire
+233;Témoin;49.8;Homme;Fumeur actuel;Exposition importante;24.5;Non;Secondaire;Non;Ile-de-France
+234;Témoin;59.2;Femme;Jamais;Exposition faible;27.3;Non;Primaire;Oui;Ile-de-France
+235;Témoin;63.1;Femme;Jamais;Exposition faible;27.5;Oui;Secondaire;Oui;Centre-Val-de-Loire
+236;Témoin;69.4;Femme;Jamais;Exposition faible;27.6;Oui;Secondaire;Non;Ile-de-France
+237;Témoin;53.0;Homme;Jamais;Exposition faible;28.2;Non;Primaire;Non;Centre-Val-de-Loire
+238;Témoin;70.7;Homme;Jamais;Exposition faible;22.3;Non;Primaire;Non;Centre-Val-de-Loire
+239;Témoin;58.2;Femme;Jamais;Aucune exposition;28.7;Non;Primaire;Oui;Centre-Val-de-Loire
+240;Témoin;69.8;Homme;Ancien fumeur;Aucune exposition;28.8;Non;Secondaire;Oui;Ile-de-France
+241;Témoin;56.1;Homme;Ancien fumeur;Aucune exposition;29.6;Non;Secondaire;Non;Hauts-de-France
+242;Témoin;60.0;Homme;Jamais;Exposition faible;23.9;Non;Secondaire;Non;Ile-de-France
+243;Témoin;48.8;Homme;Jamais;Aucune exposition;33.7;Non;Secondaire;Non;Ile-de-France
+244;Témoin;52.7;Homme;Ancien fumeur;Aucune exposition;28.9;Non;Supérieur;Non;Ile-de-France
+245;Témoin;40.6;Homme;Fumeur actuel;Aucune exposition;29.0;Non;Supérieur;Non;Centre-Val-de-Loire
+246;Témoin;54.4;Femme;Jamais;Exposition faible;22.9;Non;Secondaire;Non;Centre-Val-de-Loire
+247;Témoin;55.4;Femme;Fumeur actuel;Exposition faible;34.5;Non;Secondaire;Oui;Hauts-de-France
+248;Témoin;58.1;Homme;Jamais;Aucune exposition;26.8;Non;Secondaire;Oui;Centre-Val-de-Loire
+249;Témoin;54.0;Homme;Fumeur actuel;Aucune exposition;25.2;Non;Supérieur;Non;Hauts-de-France
+250;Témoin;70.9;Homme;Ancien fumeur;Exposition faible;30.5;Non;Secondaire;Oui;Ile-de-France
+251;Témoin;67.4;Femme;Ancien fumeur;Exposition importante;27.2;Non;Secondaire;Oui;Ile-de-France
+252;Témoin;65.9;Homme;Fumeur actuel;Exposition importante;30.9;Non;Supérieur;Non;Hauts-de-France
+253;Témoin;49.3;Homme;Ancien fumeur;Aucune exposition;26.7;Non;Primaire;Non;Centre-Val-de-Loire
+254;Témoin;57.8;Homme;Jamais;Aucune exposition;24.4;Oui;Primaire;Oui;Centre-Val-de-Loire
+255;Témoin;71.2;Femme;Jamais;Aucune exposition;25.8;Non;Supérieur;Non;Centre-Val-de-Loire
+256;Témoin;66.0;Homme;Jamais;Aucune exposition;26.2;Non;Secondaire;Non;Hauts-de-France
+257;Témoin;58.4;Homme;Ancien fumeur;Exposition faible;26.3;Non;Primaire;Oui;Ile-de-France
+258;Témoin;65.6;Homme;Ancien fumeur;Exposition importante;24.9;Non;Primaire;Non;Hauts-de-France
+259;Témoin;52.3;Femme;Ancien fumeur;Aucune exposition;26.3;Non;Secondaire;Oui;Ile-de-France
+260;Témoin;59.3;Femme;Ancien fumeur;Aucune exposition;22.6;Non;Supérieur;Non;Centre-Val-de-Loire
+261;Témoin;64.5;Femme;Ancien fumeur;Aucune exposition;29.9;Non;Secondaire;Non;Centre-Val-de-Loire
+262;Témoin;52.2;Femme;Jamais;Aucune exposition;31.2;Oui;Supérieur;Non;Hauts-de-France
+263;Témoin;58.2;Homme;Fumeur actuel;Aucune exposition;29.1;Non;Primaire;Non;Centre-Val-de-Loire
+264;Témoin;53.1;Homme;Ancien fumeur;Exposition faible;20.4;Non;Primaire;Oui;Ile-de-France
+265;Témoin;52.0;Homme;Ancien fumeur;Exposition faible;20.5;Non;Supérieur;Non;Ile-de-France
+266;Témoin;54.2;Homme;Jamais;Exposition faible;27.0;Non;Primaire;Non;Hauts-de-France
+267;Témoin;60.2;Homme;Ancien fumeur;Aucune exposition;21.1;Oui;Secondaire;Oui;Ile-de-France
+268;Témoin;65.4;Femme;Ancien fumeur;Aucune exposition;27.7;Oui;Secondaire;Non;Centre-Val-de-Loire
+269;Témoin;57.5;Femme;Jamais;Aucune exposition;20.9;Non;Secondaire;Non;Hauts-de-France
+270;Témoin;64.3;Homme;Jamais;Aucune exposition;25.7;Non;Secondaire;Oui;Centre-Val-de-Loire
+271;Témoin;48.3;Femme;Jamais;Aucune exposition;25.5;Non;Primaire;Non;Centre-Val-de-Loire
+272;Témoin;62.1;Femme;Ancien fumeur;Exposition importante;27.5;Non;Secondaire;Non;Hauts-de-France
+273;Témoin;49.9;Femme;Fumeur actuel;Exposition faible;25.4;Non;Primaire;Non;Hauts-de-France
+274;Témoin;73.7;Femme;Jamais;Aucune exposition;25.4;Non;Secondaire;Oui;Hauts-de-France
+275;Témoin;84.0;Femme;Fumeur actuel;Aucune exposition;25.9;Non;Secondaire;Non;Ile-de-France
+276;Témoin;64.0;Femme;Ancien fumeur;Exposition importante;21.6;Oui;Supérieur;Non;Hauts-de-France
+277;Témoin;67.6;Femme;Ancien fumeur;Exposition importante;27.9;Non;Supérieur;Non;Ile-de-France
+278;Témoin;62.8;Femme;Ancien fumeur;Exposition faible;35.6;Non;Supérieur;Non;Hauts-de-France
+279;Témoin;70.4;Homme;Jamais;Aucune exposition;30.9;Oui;Secondaire;Non;Centre-Val-de-Loire
+280;Témoin;52.3;Homme;Fumeur actuel;Aucune exposition;28.7;Oui;Secondaire;Non;Ile-de-France
+281;Témoin;64.2;Homme;Jamais;Exposition importante;26.4;Non;Secondaire;Non;Ile-de-France
+282;Témoin;71.9;Homme;Fumeur actuel;Aucune exposition;28.9;Non;Secondaire;Non;Centre-Val-de-Loire
+283;Témoin;49.2;Homme;Jamais;Aucune exposition;23.8;Non;Supérieur;Non;Ile-de-France
+284;Témoin;53.1;Homme;Jamais;Exposition faible;33.2;Oui;Primaire;Non;Ile-de-France
+285;Témoin;69.8;Homme;Jamais;Aucune exposition;26.1;Non;Supérieur;Non;Ile-de-France
+286;Témoin;48.1;Homme;Fumeur actuel;Aucune exposition;30.6;Non;Secondaire;Non;Hauts-de-France
+287;Témoin;71.1;Homme;Ancien fumeur;Exposition importante;23.0;Non;Secondaire;Non;Hauts-de-France
+288;Témoin;59.4;Homme;Jamais;Aucune exposition;27.3;Non;Primaire;Non;Ile-de-France
+289;Témoin;77.5;Femme;Fumeur actuel;Aucune exposition;23.1;Non;Supérieur;Non;Ile-de-France
+290;Témoin;60.8;Femme;Ancien fumeur;Aucune exposition;29.4;Non;Primaire;Non;Ile-de-France
+291;Témoin;63.0;Homme;Jamais;Aucune exposition;28.3;Non;Supérieur;Non;Centre-Val-de-Loire
+292;Témoin;69.4;Homme;Jamais;Aucune exposition;28.7;Non;Secondaire;Non;Centre-Val-de-Loire
+293;Témoin;59.4;Homme;Ancien fumeur;Exposition importante;25.4;Non;Supérieur;Non;Hauts-de-France
+294;Témoin;56.8;Homme;Fumeur actuel;Exposition faible;30.9;Non;Supérieur;Non;Hauts-de-France
+295;Témoin;50.1;Femme;Jamais;Aucune exposition;23.8;Non;Secondaire;Non;Ile-de-France
+296;Témoin;82.6;Homme;Jamais;Exposition faible;28.2;Non;Primaire;Non;Centre-Val-de-Loire
+297;Témoin;77.6;Femme;Fumeur actuel;Aucune exposition;25.2;Non;Secondaire;Non;Ile-de-France
+298;Témoin;60.9;Homme;Jamais;Exposition faible;30.1;Non;Secondaire;Oui;Hauts-de-France
+299;Témoin;55.7;Homme;Jamais;Aucune exposition;27.3;Non;Secondaire;Non;Hauts-de-France
+300;Témoin;56.0;Homme;Ancien fumeur;Aucune exposition;30.4;Oui;Primaire;Non;Ile-de-France
+301;Témoin;49.1;Femme;Fumeur actuel;Exposition faible;24.8;Non;Primaire;Oui;Hauts-de-France
+302;Témoin;59.6;Homme;Jamais;Exposition faible;23.8;Non;Supérieur;Non;Ile-de-France
+303;Témoin;63.4;Homme;Ancien fumeur;Aucune exposition;28.2;Non;Primaire;Non;Hauts-de-France
+304;Témoin;60.3;Homme;Fumeur actuel;Aucune exposition;32.5;Non;Secondaire;Non;Centre-Val-de-Loire
+305;Témoin;67.4;Femme;Ancien fumeur;Exposition faible;31.5;Non;Supérieur;Oui;Ile-de-France
+306;Témoin;57.1;Femme;Jamais;Aucune exposition;28.7;Non;Primaire;Non;Ile-de-France
+307;Témoin;61.8;Femme;Fumeur actuel;Aucune exposition;24.0;Oui;Primaire;Non;Centre-Val-de-Loire
+308;Témoin;50.9;Femme;Ancien fumeur;Exposition faible;23.6;Non;Supérieur;Non;Ile-de-France
+309;Témoin;66.7;Homme;Fumeur actuel;Exposition faible;26.0;Oui;Primaire;Non;Hauts-de-France
+310;Témoin;64.7;Femme;Ancien fumeur;Aucune exposition;29.1;Non;Primaire;Oui;Ile-de-France
+311;Témoin;53.1;Femme;Ancien fumeur;Aucune exposition;34.1;Non;Secondaire;Non;Centre-Val-de-Loire
+312;Témoin;62.9;Femme;Ancien fumeur;Aucune exposition;31.0;Non;Secondaire;Non;Ile-de-France
+313;Témoin;54.4;Homme;Jamais;Exposition importante;26.4;Oui;Secondaire;Oui;Centre-Val-de-Loire
+314;Témoin;52.0;Homme;Ancien fumeur;Aucune exposition;28.1;Non;Secondaire;Non;Centre-Val-de-Loire
+315;Témoin;65.5;Homme;Fumeur actuel;Exposition importante;26.1;Non;Secondaire;Non;Centre-Val-de-Loire
+316;Témoin;66.2;Homme;Jamais;Exposition faible;29.0;Non;Supérieur;Non;Centre-Val-de-Loire
+317;Témoin;56.4;Homme;Fumeur actuel;Exposition faible;33.0;Non;Supérieur;Oui;Centre-Val-de-Loire
+318;Témoin;49.3;Homme;Ancien fumeur;Exposition faible;25.1;Non;Supérieur;Non;Hauts-de-France
+319;Témoin;65.8;Femme;Fumeur actuel;Aucune exposition;21.4;Non;Primaire;Non;Ile-de-France
+320;Témoin;72.0;Femme;Fumeur actuel;Exposition importante;30.6;Non;Primaire;Non;Centre-Val-de-Loire
+321;Témoin;56.9;Homme;Ancien fumeur;Exposition faible;22.8;Non;Secondaire;Non;Ile-de-France
+322;Témoin;52.7;Homme;Jamais;Aucune exposition;27.7;Non;Supérieur;Non;Ile-de-France
+323;Témoin;47.2;Homme;Fumeur actuel;Exposition faible;24.1;Non;Supérieur;Non;Ile-de-France
+324;Témoin;67.3;Homme;Ancien fumeur;Exposition importante;33.8;Non;Secondaire;Non;Centre-Val-de-Loire
+325;Témoin;60.9;Homme;Ancien fumeur;Exposition faible;24.7;Non;Primaire;Non;Centre-Val-de-Loire
+326;Témoin;52.2;Femme;Fumeur actuel;Aucune exposition;27.3;Non;Primaire;Non;Ile-de-France
+327;Témoin;44.9;Homme;Jamais;Aucune exposition;24.9;Non;Supérieur;Non;Hauts-de-France
+328;Témoin;63.5;Homme;Ancien fumeur;Exposition importante;25.3;Non;Supérieur;Non;Centre-Val-de-Loire
+329;Témoin;63.9;Homme;Jamais;Aucune exposition;26.6;Non;Secondaire;Non;Hauts-de-France
+330;Témoin;69.3;Homme;Ancien fumeur;Aucune exposition;26.2;Oui;Secondaire;Oui;Centre-Val-de-Loire
+331;Témoin;56.2;Femme;Ancien fumeur;Exposition faible;22.4;Non;Secondaire;Non;Hauts-de-France
+332;Témoin;46.6;Femme;Ancien fumeur;Aucune exposition;26.1;Non;Primaire;Non;Centre-Val-de-Loire
+333;Témoin;57.2;Homme;Ancien fumeur;Aucune exposition;25.2;Non;Supérieur;Oui;Centre-Val-de-Loire
+334;Témoin;56.7;Homme;Ancien fumeur;Aucune exposition;25.1;Non;Secondaire;Non;Centre-Val-de-Loire
+335;Témoin;71.2;Femme;Fumeur actuel;Aucune exposition;21.6;Oui;Primaire;Non;Centre-Val-de-Loire
+336;Témoin;66.8;Homme;Fumeur actuel;Aucune exposition;30.5;Non;Secondaire;Non;Ile-de-France
+337;Témoin;61.6;Homme;Ancien fumeur;Exposition faible;27.7;Non;Primaire;Oui;Ile-de-France
+338;Témoin;45.4;Femme;Fumeur actuel;Aucune exposition;32.2;Oui;Supérieur;Oui;Ile-de-France
+339;Témoin;52.0;Femme;Fumeur actuel;Exposition faible;24.9;Non;Supérieur;Oui;Ile-de-France
+340;Témoin;52.4;Femme;Ancien fumeur;Aucune exposition;34.1;Non;Secondaire;Non;Ile-de-France
+341;Témoin;50.6;Femme;Jamais;Exposition faible;26.4;Non;Supérieur;Non;Centre-Val-de-Loire
+342;Témoin;59.0;Homme;Jamais;Exposition faible;26.8;Oui;Secondaire;Oui;Hauts-de-France
+343;Témoin;54.4;Homme;Ancien fumeur;Aucune exposition;26.2;Non;Secondaire;Non;Ile-de-France
+344;Témoin;61.0;Femme;Jamais;Exposition faible;21.7;Oui;Secondaire;Non;Centre-Val-de-Loire
+345;Témoin;65.4;Homme;Jamais;Aucune exposition;24.5;Non;Supérieur;Non;Ile-de-France
+346;Témoin;62.9;Homme;Jamais;Aucune exposition;26.1;Non;Secondaire;Non;Centre-Val-de-Loire
+347;Témoin;49.4;Homme;Ancien fumeur;Exposition faible;27.6;Non;Secondaire;Non;Ile-de-France
+348;Témoin;56.2;Homme;Ancien fumeur;Aucune exposition;28.7;Oui;Secondaire;Non;Ile-de-France
+349;Témoin;73.5;Homme;Ancien fumeur;Aucune exposition;21.4;Non;Secondaire;Oui;Centre-Val-de-Loire
+350;Témoin;51.4;Homme;Fumeur actuel;Exposition importante;26.6;Oui;Secondaire;Non;Ile-de-France
+351;Témoin;58.9;Homme;Ancien fumeur;Exposition faible;31.7;Non;Supérieur;Oui;Ile-de-France
+352;Témoin;65.4;Femme;Jamais;Aucune exposition;28.7;Non;Supérieur;Non;Ile-de-France
+353;Témoin;63.8;Femme;Ancien fumeur;Exposition faible;28.3;Non;Primaire;Non;Centre-Val-de-Loire
+354;Témoin;55.8;Homme;Ancien fumeur;Aucune exposition;23.7;Oui;Supérieur;Oui;Hauts-de-France
+355;Témoin;60.2;Femme;Ancien fumeur;Aucune exposition;30.3;Non;Secondaire;Non;Ile-de-France
+356;Témoin;50.7;Homme;Ancien fumeur;Exposition faible;24.7;Non;Supérieur;Oui;Ile-de-France
+357;Témoin;68.2;Homme;Ancien fumeur;Aucune exposition;27.1;Non;Primaire;Non;Ile-de-France
+358;Témoin;67.7;Homme;Ancien fumeur;Exposition faible;33.6;Non;Supérieur;Non;Centre-Val-de-Loire
+359;Témoin;65.9;Femme;Ancien fumeur;Exposition faible;23.3;Non;Supérieur;Non;Hauts-de-France
+360;Témoin;61.4;Homme;Fumeur actuel;Exposition faible;31.6;Non;Secondaire;Oui;Hauts-de-France
+361;Témoin;61.6;Femme;Fumeur actuel;Exposition faible;24.6;Non;Primaire;Oui;Ile-de-France
+362;Témoin;65.5;Homme;Fumeur actuel;Aucune exposition;24.4;Non;Secondaire;Non;Centre-Val-de-Loire
+363;Témoin;62.5;Femme;Ancien fumeur;Aucune exposition;29.2;Non;Secondaire;Non;Centre-Val-de-Loire
+364;Témoin;49.0;Homme;Fumeur actuel;Exposition faible;31.4;Non;Primaire;Non;Ile-de-France
+365;Témoin;64.7;Homme;Jamais;Exposition faible;22.4;Non;Primaire;Non;Ile-de-France
+366;Témoin;78.3;Homme;Ancien fumeur;Aucune exposition;34.9;Non;Primaire;Oui;Ile-de-France
+367;Témoin;64.4;Homme;Ancien fumeur;Exposition importante;37.0;Non;Secondaire;Non;Ile-de-France
+368;Témoin;70.8;Femme;Fumeur actuel;Aucune exposition;22.1;Non;Secondaire;Oui;Ile-de-France
+369;Témoin;67.5;Homme;Fumeur actuel;Aucune exposition;32.3;Non;Primaire;Non;Centre-Val-de-Loire
+370;Témoin;58.9;Homme;Ancien fumeur;Exposition importante;33.1;Non;Primaire;Oui;Hauts-de-France
+371;Témoin;53.1;Homme;Fumeur actuel;Aucune exposition;25.5;Non;Primaire;Oui;Ile-de-France
+372;Témoin;58.6;Homme;Jamais;Exposition faible;21.3;Non;Supérieur;Non;Centre-Val-de-Loire
+373;Témoin;64.4;Femme;Ancien fumeur;Aucune exposition;25.1;Non;Secondaire;Non;Hauts-de-France
+374;Témoin;60.9;Homme;Jamais;Exposition faible;25.0;Oui;Supérieur;Non;Centre-Val-de-Loire
+375;Témoin;65.9;Homme;Fumeur actuel;Aucune exposition;30.3;Non;Supérieur;Oui;Hauts-de-France
+376;Témoin;59.8;Femme;Jamais;Exposition faible;23.6;Non;Secondaire;Oui;Centre-Val-de-Loire
+377;Témoin;46.1;Homme;Fumeur actuel;Exposition faible;23.8;Non;Secondaire;Non;Centre-Val-de-Loire
+378;Témoin;65.9;Homme;Fumeur actuel;Exposition faible;29.9;Non;Primaire;Oui;Hauts-de-France
+379;Témoin;55.5;Femme;Ancien fumeur;Exposition faible;26.8;Non;Primaire;Non;Ile-de-France
+380;Témoin;58.5;Homme;Ancien fumeur;Exposition faible;28.0;Non;Supérieur;Non;Hauts-de-France
+381;Témoin;59.6;Homme;Jamais;Exposition faible;31.2;Non;Secondaire;Non;Hauts-de-France
+382;Témoin;61.3;Femme;Ancien fumeur;Aucune exposition;24.6;Non;Supérieur;Non;Hauts-de-France
+383;Témoin;60.4;Homme;Ancien fumeur;Aucune exposition;30.2;Non;Primaire;Non;Hauts-de-France
+384;Témoin;70.2;Femme;Jamais;Exposition faible;28.6;Non;Secondaire;Non;Ile-de-France
+385;Témoin;60.7;Femme;Fumeur actuel;Exposition importante;27.4;Non;Supérieur;Oui;Hauts-de-France
+386;Témoin;62.4;Homme;Jamais;Aucune exposition;27.3;Oui;Secondaire;Oui;Centre-Val-de-Loire
+387;Témoin;69.4;Homme;Fumeur actuel;Exposition importante;24.8;Non;Primaire;Non;Hauts-de-France
+388;Témoin;59.8;Homme;Fumeur actuel;Aucune exposition;27.5;Non;Secondaire;Non;Centre-Val-de-Loire
+389;Témoin;59.4;Homme;Ancien fumeur;Exposition faible;30.4;Non;Secondaire;Non;Centre-Val-de-Loire
+390;Témoin;62.0;Homme;Jamais;Exposition importante;24.4;Non;Secondaire;Non;Centre-Val-de-Loire
+391;Témoin;58.3;Homme;Fumeur actuel;Aucune exposition;24.2;Non;Primaire;Non;Centre-Val-de-Loire
+392;Témoin;44.7;Femme;Ancien fumeur;Exposition faible;27.6;Oui;Primaire;Non;Ile-de-France
+393;Témoin;65.6;Femme;Ancien fumeur;Exposition faible;29.7;Oui;Primaire;Non;Centre-Val-de-Loire
+394;Témoin;54.9;Femme;Jamais;Exposition faible;27.2;Oui;Secondaire;Non;Ile-de-France
+395;Témoin;50.5;Homme;Jamais;Exposition faible;29.4;Non;Secondaire;Non;Hauts-de-France
+396;Témoin;49.4;Homme;Jamais;Aucune exposition;30.9;Non;Supérieur;Oui;Hauts-de-France
+397;Témoin;64.0;Homme;Ancien fumeur;Aucune exposition;29.2;Non;Supérieur;Non;Ile-de-France
+398;Témoin;64.0;Homme;Jamais;Exposition faible;28.6;Non;Secondaire;Non;Centre-Val-de-Loire
+399;Témoin;49.5;Homme;Jamais;Aucune exposition;25.5;Non;Secondaire;Non;Hauts-de-France
+400;Témoin;62.5;Homme;Jamais;Aucune exposition;28.3;Non;Supérieur;Oui;Hauts-de-France
+401;Témoin;55.6;Homme;Ancien fumeur;Exposition importante;24.9;Non;Primaire;Oui;Hauts-de-France
+402;Témoin;69.6;Homme;Fumeur actuel;Exposition importante;28.5;Non;Secondaire;Non;Hauts-de-France
+403;Témoin;58.6;Homme;Jamais;Aucune exposition;30.2;Non;Supérieur;Non;Centre-Val-de-Loire
+404;Témoin;52.6;Femme;Jamais;Aucune exposition;24.0;Non;Supérieur;Non;Centre-Val-de-Loire
+405;Témoin;56.5;Homme;Ancien fumeur;Aucune exposition;29.2;Non;Secondaire;Non;Ile-de-France
+406;Témoin;57.5;Femme;Jamais;Exposition faible;21.0;Non;Secondaire;Oui;Centre-Val-de-Loire
+407;Témoin;68.4;Homme;Jamais;Exposition faible;24.5;Non;Secondaire;Non;Ile-de-France
+408;Témoin;59.4;Homme;Ancien fumeur;Exposition importante;22.1;Non;Secondaire;Oui;Hauts-de-France
+409;Témoin;52.6;Homme;Ancien fumeur;Exposition importante;31.5;Non;Primaire;Non;Hauts-de-France
+410;Témoin;53.3;Femme;Jamais;Exposition importante;32.4;Non;Secondaire;Non;Hauts-de-France
+411;Témoin;49.7;Homme;Fumeur actuel;Aucune exposition;16.3;Oui;Supérieur;Oui;Ile-de-France
+412;Témoin;52.1;Femme;Jamais;Exposition faible;21.4;Non;Secondaire;Non;Ile-de-France
+413;Témoin;60.8;Homme;Fumeur actuel;Aucune exposition;25.3;Oui;Primaire;Non;Centre-Val-de-Loire
+414;Témoin;63.6;Femme;Fumeur actuel;Aucune exposition;22.8;Non;Supérieur;Non;Hauts-de-France
+415;Témoin;55.5;Homme;Jamais;Exposition importante;25.4;Oui;Primaire;Non;Centre-Val-de-Loire
+416;Témoin;67.6;Homme;Ancien fumeur;Exposition importante;30.2;Non;Secondaire;Non;Ile-de-France
+417;Témoin;51.2;Homme;Fumeur actuel;Aucune exposition;27.1;Non;Secondaire;Non;Centre-Val-de-Loire
+418;Témoin;72.0;Homme;Ancien fumeur;Exposition faible;24.2;Oui;Supérieur;Non;Ile-de-France
+419;Témoin;74.4;Homme;Ancien fumeur;Aucune exposition;23.9;Oui;Secondaire;Non;Hauts-de-France
+420;Témoin;50.8;Homme;Ancien fumeur;Aucune exposition;26.9;Non;Secondaire;Non;Hauts-de-France
+421;Témoin;66.7;Homme;Ancien fumeur;Exposition faible;28.0;Non;Primaire;Oui;Ile-de-France
+422;Témoin;55.9;Homme;Jamais;Exposition faible;26.0;Non;Supérieur;Non;Hauts-de-France
+423;Témoin;57.1;Homme;Fumeur actuel;Aucune exposition;29.7;Oui;Secondaire;Non;Ile-de-France
+424;Témoin;57.5;Homme;Ancien fumeur;Aucune exposition;27.3;Non;Secondaire;Non;Hauts-de-France
+425;Témoin;68.0;Femme;Ancien fumeur;Exposition importante;24.2;Non;Supérieur;Non;Hauts-de-France
+426;Témoin;53.9;Femme;Fumeur actuel;Exposition faible;30.3;Non;Secondaire;Non;Centre-Val-de-Loire
+427;Témoin;56.1;Homme;Ancien fumeur;Aucune exposition;29.8;Oui;Secondaire;Non;Ile-de-France
+428;Témoin;51.1;Homme;Ancien fumeur;Aucune exposition;29.6;Non;Secondaire;Non;Centre-Val-de-Loire
+429;Témoin;62.3;Femme;Jamais;Exposition faible;31.1;Non;Supérieur;Non;Centre-Val-de-Loire
+430;Témoin;45.2;Femme;Ancien fumeur;Aucune exposition;30.0;Non;Secondaire;Non;Hauts-de-France
+431;Témoin;64.4;Femme;Jamais;Exposition faible;19.9;Non;Secondaire;Oui;Hauts-de-France
+432;Témoin;67.4;Homme;Ancien fumeur;Aucune exposition;27.3;Non;Secondaire;Oui;Hauts-de-France
+433;Témoin;71.0;Femme;Ancien fumeur;Exposition faible;29.9;Non;Secondaire;Non;Centre-Val-de-Loire
+434;Témoin;63.8;Femme;Jamais;Aucune exposition;29.1;Oui;Primaire;Non;Hauts-de-France
+435;Témoin;59.4;Femme;Jamais;Exposition importante;30.0;Non;Supérieur;Non;Centre-Val-de-Loire
+436;Témoin;58.7;Homme;Ancien fumeur;Exposition faible;26.1;Non;Secondaire;Non;Centre-Val-de-Loire
+437;Témoin;53.9;Femme;Fumeur actuel;Aucune exposition;24.4;Oui;Primaire;Oui;Hauts-de-France
+438;Témoin;73.8;Femme;Fumeur actuel;Exposition faible;30.2;Non;Primaire;Oui;Centre-Val-de-Loire
+439;Témoin;47.7;Femme;Fumeur actuel;Aucune exposition;30.9;Non;Supérieur;Non;Centre-Val-de-Loire
+440;Témoin;65.8;Homme;Fumeur actuel;Exposition faible;21.9;Non;Secondaire;Non;Ile-de-France
+441;Témoin;61.3;Femme;Fumeur actuel;Exposition faible;27.9;Non;Primaire;Oui;Hauts-de-France
+442;Témoin;60.7;Femme;Jamais;Exposition faible;28.4;Non;Primaire;Non;Ile-de-France
+443;Témoin;63.8;Homme;Ancien fumeur;Aucune exposition;28.4;Non;Secondaire;Non;Ile-de-France
+444;Témoin;50.0;Femme;Ancien fumeur;Exposition faible;27.6;Non;Secondaire;Non;Centre-Val-de-Loire
+445;Témoin;52.1;Homme;Ancien fumeur;Aucune exposition;34.5;Non;Primaire;Non;Ile-de-France
+446;Témoin;61.2;Homme;Jamais;Aucune exposition;24.3;Non;Secondaire;Non;Hauts-de-France
+447;Témoin;61.6;Femme;Fumeur actuel;Exposition faible;23.0;Non;Secondaire;Non;Centre-Val-de-Loire
+448;Témoin;52.0;Homme;Ancien fumeur;Aucune exposition;24.8;Non;Supérieur;Non;Ile-de-France
+449;Témoin;67.6;Homme;Jamais;Aucune exposition;22.6;Non;Secondaire;Non;Centre-Val-de-Loire
+450;Témoin;47.9;Homme;Fumeur actuel;Aucune exposition;22.4;Non;Supérieur;Oui;Hauts-de-France
+451;Témoin;47.7;Homme;Jamais;Aucune exposition;23.6;Oui;Supérieur;Oui;Ile-de-France
+452;Témoin;60.9;Homme;Ancien fumeur;Aucune exposition;29.7;Non;Supérieur;Non;Centre-Val-de-Loire
+453;Témoin;63.8;Homme;Ancien fumeur;Aucune exposition;26.8;Non;Primaire;Non;Ile-de-France
+454;Témoin;47.6;Homme;Jamais;Aucune exposition;22.3;Non;Supérieur;Oui;Hauts-de-France
+455;Témoin;74.2;Femme;Ancien fumeur;Aucune exposition;25.7;Non;Primaire;Non;Hauts-de-France
+456;Témoin;83.2;Homme;Fumeur actuel;Aucune exposition;27.1;Non;Primaire;Non;Ile-de-France
+457;Témoin;82.6;Femme;Fumeur actuel;Aucune exposition;28.4;Non;Secondaire;Non;Centre-Val-de-Loire
+458;Témoin;45.5;Femme;Ancien fumeur;Exposition faible;26.2;Non;Secondaire;Non;Centre-Val-de-Loire
+459;Témoin;68.0;Homme;Jamais;Aucune exposition;30.0;Non;Secondaire;Non;Ile-de-France
+460;Témoin;59.1;Homme;Ancien fumeur;Exposition faible;26.7;Non;Secondaire;Non;Centre-Val-de-Loire
+461;Témoin;50.4;Homme;Jamais;Aucune exposition;25.7;Non;Secondaire;Non;Hauts-de-France
+462;Témoin;43.4;Homme;Jamais;Aucune exposition;26.7;Non;Supérieur;Non;Centre-Val-de-Loire
+463;Témoin;65.4;Homme;Jamais;Aucune exposition;23.4;Non;Secondaire;Non;Centre-Val-de-Loire
+464;Témoin;52.7;Homme;Jamais;Aucune exposition;26.8;Non;Supérieur;Non;Centre-Val-de-Loire
+465;Témoin;65.4;Homme;Jamais;Aucune exposition;27.0;Non;Supérieur;Non;Centre-Val-de-Loire
+466;Témoin;54.9;Homme;Jamais;Aucune exposition;34.4;Oui;Secondaire;Non;Centre-Val-de-Loire
+467;Témoin;62.9;Homme;Jamais;Aucune exposition;24.3;Non;Secondaire;Non;Hauts-de-France
+468;Témoin;64.1;Homme;Ancien fumeur;Aucune exposition;29.3;Oui;Primaire;Non;Hauts-de-France
+469;Témoin;38.5;Homme;Jamais;Aucune exposition;22.8;Non;Secondaire;Non;Ile-de-France
+470;Témoin;65.3;Femme;Jamais;Aucune exposition;28.1;Non;Primaire;Oui;Hauts-de-France
+471;Témoin;56.0;Homme;Jamais;Aucune exposition;25.9;Oui;Supérieur;Oui;Ile-de-France
+472;Témoin;57.8;Homme;Fumeur actuel;Exposition importante;29.0;Non;Secondaire;Oui;Ile-de-France
+473;Témoin;55.3;Homme;Ancien fumeur;Aucune exposition;28.1;Non;Supérieur;Non;Hauts-de-France
+474;Témoin;46.7;Femme;Jamais;Aucune exposition;26.2;Non;Supérieur;Non;Centre-Val-de-Loire
+475;Témoin;55.9;Femme;Jamais;Aucune exposition;28.9;Non;Primaire;Non;Ile-de-France
+476;Témoin;49.9;Femme;Ancien fumeur;Aucune exposition;31.0;Non;Secondaire;Oui;Centre-Val-de-Loire
+477;Témoin;58.3;Homme;Ancien fumeur;Aucune exposition;28.2;Non;Supérieur;Non;Hauts-de-France
+478;Témoin;48.1;Homme;Ancien fumeur;Exposition faible;24.4;Non;Secondaire;Non;Hauts-de-France
+479;Témoin;71.8;Femme;Fumeur actuel;Aucune exposition;24.0;Non;Supérieur;Non;Centre-Val-de-Loire
+480;Témoin;46.5;Femme;Fumeur actuel;Aucune exposition;23.0;Non;Secondaire;Oui;Centre-Val-de-Loire
+481;Témoin;66.8;Homme;Jamais;Aucune exposition;27.9;Non;Primaire;Non;Ile-de-France
+482;Témoin;61.3;Homme;Jamais;Aucune exposition;24.8;Non;Primaire;Non;Centre-Val-de-Loire
+483;Témoin;62.3;Homme;Ancien fumeur;Aucune exposition;27.0;Non;Primaire;Oui;Hauts-de-France
+484;Témoin;66.0;Homme;Ancien fumeur;Exposition faible;22.8;Non;Primaire;Non;Hauts-de-France
+485;Témoin;57.3;Homme;Jamais;Exposition faible;16.2;Oui;Secondaire;Non;Centre-Val-de-Loire
+486;Témoin;58.4;Homme;Ancien fumeur;Aucune exposition;25.1;Oui;Secondaire;Non;Hauts-de-France
+487;Témoin;53.8;Femme;Jamais;Aucune exposition;23.9;Oui;Secondaire;Non;Ile-de-France
+488;Témoin;56.6;Femme;Ancien fumeur;Aucune exposition;26.3;Non;Secondaire;Oui;Ile-de-France
+489;Témoin;42.5;Homme;Jamais;Exposition importante;28.3;Non;Secondaire;Non;Centre-Val-de-Loire
+490;Témoin;76.9;Femme;Ancien fumeur;Aucune exposition;26.6;Non;Secondaire;Non;Hauts-de-France
+491;Témoin;57.3;Homme;Jamais;Aucune exposition;21.5;Non;Secondaire;Oui;Ile-de-France
+492;Témoin;70.1;Femme;Jamais;Aucune exposition;24.8;Non;Supérieur;Oui;Ile-de-France
+493;Témoin;55.5;Femme;Fumeur actuel;Aucune exposition;35.4;Non;Supérieur;Non;Hauts-de-France
+494;Témoin;64.4;Femme;Ancien fumeur;Exposition faible;27.2;Non;Supérieur;Non;Hauts-de-France
+495;Témoin;56.7;Femme;Jamais;Aucune exposition;30.9;Non;Secondaire;Non;Centre-Val-de-Loire
+496;Témoin;66.1;Homme;Ancien fumeur;Aucune exposition;28.4;Non;Supérieur;Non;Ile-de-France
+497;Témoin;59.8;Homme;Jamais;Exposition faible;23.5;Non;Secondaire;Oui;Ile-de-France
+498;Témoin;63.2;Femme;Jamais;Exposition faible;24.8;Non;Secondaire;Non;Centre-Val-de-Loire
+499;Témoin;68.2;Femme;Jamais;Aucune exposition;24.4;Oui;Primaire;Oui;Hauts-de-France
+500;Témoin;63.6;Homme;Ancien fumeur;Exposition faible;25.3;Non;Supérieur;Non;Hauts-de-France
+501;Témoin;67.9;Homme;Jamais;Aucune exposition;26.2;Non;Supérieur;Non;Centre-Val-de-Loire
+502;Témoin;60.2;Homme;Jamais;Aucune exposition;24.2;Non;Supérieur;Non;Centre-Val-de-Loire
+503;Témoin;67.6;Femme;Fumeur actuel;Exposition importante;23.9;Non;Supérieur;Non;Hauts-de-France
+504;Témoin;64.6;Femme;Ancien fumeur;Exposition faible;20.8;Non;Primaire;Oui;Ile-de-France
+505;Témoin;76.0;Homme;Jamais;Exposition faible;33.5;Non;Primaire;Oui;Centre-Val-de-Loire
+506;Témoin;62.8;Homme;Ancien fumeur;Exposition importante;34.8;Non;Primaire;Non;Ile-de-France
+507;Témoin;55.5;Homme;Ancien fumeur;Exposition faible;30.3;Non;Primaire;Non;Ile-de-France
+508;Témoin;69.5;Homme;Jamais;Exposition faible;22.7;Non;Primaire;Non;Centre-Val-de-Loire
+509;Témoin;75.7;Homme;Jamais;Aucune exposition;26.3;Non;Primaire;Oui;Ile-de-France
+510;Témoin;61.4;Homme;Jamais;Aucune exposition;27.0;Non;Secondaire;Non;Ile-de-France
+511;Témoin;68.8;Femme;Ancien fumeur;Aucune exposition;29.7;Non;Primaire;Oui;Centre-Val-de-Loire
+512;Témoin;69.2;Homme;Jamais;Exposition faible;28.8;Non;Supérieur;Non;Centre-Val-de-Loire
+513;Témoin;58.7;Homme;Ancien fumeur;Aucune exposition;25.0;Oui;Secondaire;Non;Ile-de-France
+514;Témoin;59.1;Homme;Jamais;Aucune exposition;30.9;Non;Secondaire;Non;Ile-de-France
+515;Témoin;58.2;Homme;Jamais;Exposition faible;27.7;Non;Secondaire;Non;Hauts-de-France
+516;Témoin;56.3;Homme;Ancien fumeur;Exposition faible;32.3;Non;Secondaire;Non;Hauts-de-France
+517;Témoin;49.7;Femme;Jamais;Aucune exposition;27.9;Non;Secondaire;Oui;Centre-Val-de-Loire
+518;Témoin;55.0;Homme;Ancien fumeur;Aucune exposition;29.4;Oui;Secondaire;Non;Centre-Val-de-Loire
+519;Témoin;62.4;Homme;Jamais;Exposition faible;27.7;Oui;Secondaire;Oui;Ile-de-France
+520;Témoin;70.5;Femme;Jamais;Exposition faible;28.7;Non;Secondaire;Non;Centre-Val-de-Loire
+521;Témoin;70.1;Femme;Ancien fumeur;Aucune exposition;25.3;Oui;Supérieur;Oui;Hauts-de-France
+522;Témoin;53.2;Homme;Jamais;Aucune exposition;28.6;Non;Supérieur;Oui;Centre-Val-de-Loire
+523;Témoin;72.2;Homme;Fumeur actuel;Aucune exposition;25.9;Non;Secondaire;Non;Ile-de-France
+524;Témoin;43.5;Femme;Ancien fumeur;Aucune exposition;26.1;Non;Supérieur;Non;Ile-de-France
+525;Témoin;53.4;Femme;Ancien fumeur;Exposition faible;31.1;Non;Primaire;Non;Centre-Val-de-Loire
+526;Témoin;62.2;Homme;Jamais;Aucune exposition;33.6;Non;Primaire;Oui;Centre-Val-de-Loire
+527;Témoin;64.6;Homme;Fumeur actuel;Exposition faible;26.3;Non;Secondaire;Non;Hauts-de-France
+528;Témoin;50.9;Homme;Jamais;Aucune exposition;25.7;Non;Secondaire;Non;Ile-de-France
+529;Témoin;51.5;Femme;Ancien fumeur;Aucune exposition;26.0;Non;Secondaire;Non;Ile-de-France
+530;Témoin;53.3;Homme;Jamais;Exposition faible;34.2;Non;Secondaire;Non;Hauts-de-France
+531;Témoin;45.5;Homme;Ancien fumeur;Aucune exposition;24.3;Oui;Supérieur;Oui;Ile-de-France
+532;Témoin;73.7;Femme;Jamais;Aucune exposition;27.8;Oui;Supérieur;Non;Hauts-de-France
+533;Témoin;60.9;Homme;Jamais;Exposition importante;22.5;Non;Secondaire;Oui;Centre-Val-de-Loire
+534;Témoin;43.9;Femme;Ancien fumeur;Exposition faible;27.1;Non;Supérieur;Non;Hauts-de-France
+535;Témoin;57.2;Femme;Ancien fumeur;Aucune exposition;25.9;Non;Secondaire;Non;Hauts-de-France
+536;Témoin;61.8;Femme;Ancien fumeur;Aucune exposition;28.3;Non;Secondaire;Non;Centre-Val-de-Loire
+537;Témoin;60.9;Femme;Jamais;Aucune exposition;27.8;Non;Supérieur;Non;Ile-de-France
+538;Témoin;65.7;Homme;Jamais;Exposition faible;31.0;Oui;Secondaire;Non;Ile-de-France
+539;Témoin;69.4;Homme;Ancien fumeur;Aucune exposition;28.7;Non;Supérieur;Non;Ile-de-France
+540;Témoin;65.9;Femme;Jamais;Aucune exposition;23.3;Non;Primaire;Non;Hauts-de-France
+541;Témoin;58.0;Femme;Jamais;Exposition importante;17.1;Non;Supérieur;Non;Hauts-de-France
+542;Témoin;64.3;Homme;Ancien fumeur;Aucune exposition;20.8;Oui;Primaire;Non;Centre-Val-de-Loire
+543;Témoin;51.2;Homme;Fumeur actuel;Aucune exposition;25.7;Non;Supérieur;Non;Ile-de-France
+544;Témoin;54.4;Homme;Ancien fumeur;Aucune exposition;24.1;Non;Supérieur;Non;Centre-Val-de-Loire
+545;Témoin;67.1;Femme;Fumeur actuel;Exposition importante;37.3;Oui;Supérieur;Non;Hauts-de-France
+546;Témoin;54.2;Homme;Fumeur actuel;Exposition importante;26.1;Non;Supérieur;Non;Hauts-de-France
+547;Témoin;46.9;Homme;Fumeur actuel;Aucune exposition;27.4;Non;Secondaire;Oui;Centre-Val-de-Loire
+548;Témoin;62.2;Homme;Ancien fumeur;Aucune exposition;33.7;Non;Supérieur;Non;Hauts-de-France
+549;Témoin;60.6;Homme;Jamais;Aucune exposition;26.4;Non;Primaire;Non;Centre-Val-de-Loire
+550;Témoin;70.9;Homme;Ancien fumeur;Exposition importante;23.6;Non;Primaire;Non;Hauts-de-France

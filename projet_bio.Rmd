@@ -1,0 +1,8 @@
+---
+title: "Projet biostatistique"
+author: "Gambardello Clara, Karla Pem"
+date: "2025-12-09"
+output: pdf_document
+---
+
+## Voila voila 
