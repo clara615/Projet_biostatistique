@@ -5,4 +5,35 @@ date: "2025-12-09"
 output: pdf_document
 ---
 
-## Voila voila 
+# Description du jeu de donnée et des variables
+
+# Quelques statistiques descriptives
+
+# Régression logistique avec covariables quantitatives
+
+# Régression logistique avec covariable qualitative
+
+# --> changer les modalités de références quand variables qualitatives
+
+# Avec des données en trial/events (si on peut avec les données)
+
+# Régression logistique avec une variable qualitative et quantitative
+
+# Régression polytomique ordonnée
+
+# Régression polytomique non ordonnée
+
+# Suggestions :
+
+# Faire des annova et des tests et Procédures de sélection de modèles (forward, backward, stepwise) 
+# (Il en parle aussi dans le tp)
+
+# On peut tenter une ou deux régression linéaire j'ai vu qu'il en parle aussi dans l'énoncé de tp
+# juste pourmontrer que c'est nul je pense
+
+# Dans son énoncé de TP y a : Quelques statistiques qui mesurent la performance du modèle
+# ducoup je pense faut qu'on regarde les performance des modèle ça peut être bien
+
+# Et je pense aussi qu'il faut s'inspirer des questions qu'il nous pose dans le tp pour faire 
+# des interpretations ou jsp mdrr il va kiffer
+
