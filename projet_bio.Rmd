@@ -5,11 +5,175 @@ date: "2025-12-09"
 output: pdf_document
 ---
 
+- ***Dans toute cette étude les intervalles de confiance et les conclusions statistique se feront avec une confiance de 95%. ***
+
+```{r, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(MASS)
+```
+
 # Description du jeu de donnée et des variables
+
+```{r}
+CancerPoumon <- read.csv("CancerPoumongood.csv", sep=";")
+head(CancerPoumon)
+```
+
+```{r, include=FALSE}
+#attach(CancerPoumon)
+```
+
+```{r}
+# Informations sur la table de donnée
+str(CancerPoumon)
+```
+
+Notre table de données sur le cancer du poumon contient 550 observations
+(Cas + témoin), et 12 varibles.
+
+Les variables sont les suivantes : 
+- "statut_cas_temoin" : Précise le groupe de la personne Cas ou Témoin 
+- "age", "sexe", "imc" 
+- "region" : Donne la région parmis ("Centre-Val-de-Loire", "Hauts-de-France", "Ile-de-France").
+- "niveau_etudes" : Donne le niveau d'étude selon 3 modalités ("Primaire","Secondaire", "Supérieur"). 
+- "tabagisme" : Donne le statut de l'individu sur le tabac selon 3 modalités ("Ancien fumeur", "Fumeur actuel", "Jamais"). 
+- "exposition_professionnelle" : Donne l'exposition au tabac des individus sur leur lieu de travail selon 3 modalités
+("Aucune exposition", "Exposition faible", "Exposition importante"). 
+- "bronchopneumopathie_chronique" : Présence ou non d’une BPCO ("Oui", "Non"). 
+- "exposition_domestique_fumee" : Donne l'exposition domestique à la fumée de tabac ("Oui", "Non").
+
+```{r}
+colSums(is.na(CancerPoumon))
+```
+
+Il n'y a pas de données manquantes dans la table de donnée.
+
+```{r}
+summary(factor(CancerPoumon$statut_cas_temoin))
+```
+
+Dans cette étude on a 230 cas et 320 témoins.
 
 # Quelques statistiques descriptives
 
-# Régression logistique avec covariables quantitatives
+```{r}
+ggplot(CancerPoumon, aes(x=niveau_etudes, fill=tabagisme)) +
+  facet_wrap(~statut_cas_temoin) +
+  geom_bar(position="dodge")
+```
+
+```{r}
+ggplot(CancerPoumon, aes(x=exposition_domestique_fumee, fill=tabagisme)) +
+  facet_wrap(~statut_cas_temoin) +
+  geom_bar(position="dodge")
+```
+
+```{r}
+ggplot(CancerPoumon, aes(x=sexe, fill=bronchopneumopathie_chronique)) +
+  facet_wrap(~statut_cas_temoin) +
+  geom_bar(position="dodge")
+```
+
+# Régression logistique 
+
+La régression logistique modélise la distribution conjointe de (Y,X) plutôt que la distribution conditionnelle de Y sachant X, ou Y est une variable qualitative et X quantitatives ou qualitatives. Elle prédit la probabilité qu’une observation appartienne à une classe donnée. 
+
+- Dans le cas de la classification binaire cette probabilité est modélisée à l’aide de la `fonction logistique` :
+
+$$P(Y = 0 \mid X) = \frac{e^{-\langle \beta, X \rangle}}{1 + e^{-\langle \beta, X \rangle}} \quad \text{et} \quad P(Y = 1 \mid X) = \frac{1}{1 + e^{-\langle \beta, X \rangle}}$$
+
+où : \
+\- $\beta$ = ($\beta_0$, $\dots$, $\beta_p$) est le vecteur des paramètres. \
+\- $X=(1, X_1, X_2, ..., X_p)$ sont les variables explicatives du modèle.
+
+La régression logistique repose également sur la `fonction logit`, qui permet de relier la probabilité d'appartenir à la classe 0 ou 1 à une combinaison linéaire des variables explicatives. La fonction logit est définie par :
+
+$$ \text{logit}(P) = \log\left( \frac{P}{1 - P} \right) $$
+
+On utilise également le `log-odds` qui est le logarithme du rapport de probabilités entre la classe 1 et la classe 0 :
+
+$$ \text{log-odds} = \log\left( \frac{P(Y=1 \mid X)}{1 - P(Y=1 \mid X)} \right) $$
+
+## Régression logistique avec covariables quantitatives
+
+Les variables quantitatives sont "age" et "imc". On cherche a prédire la variable "statut_cas_temoin" que l'on va transformer en variable binaire valant 0 ou 1, c'est à dire "Cas"=1, et "temoin"=0.
+
+On transforme également la variable "age", qui est de type chaine de caratère dans la table, en float. De plus cette variable contient une virgule pour les décimale donc nous devont changer cela par un point pour que les données sont ensuite valide.
+
+```{r}
+CancerPoumon$statut_cas_temoin <- ifelse(CancerPoumon$statut_cas_temoin=="Cas", 1, 0)
+CancerPoumon <- CancerPoumon %>%
+  mutate(age=as.numeric(str_replace(age, ",", ".")))
+head(CancerPoumon)
+```
+
+```{r}
+res_log_quanti <- glm(statut_cas_temoin ~ age + imc, family=binomial, data=CancerPoumon)
+res_log_quanti
+
+res_log_quanti2 <- glm(statut_cas_temoin ~ imc, family=binomial, data=CancerPoumon)
+res_log_quanti2
+
+res_log_quanti3 <- glm(statut_cas_temoin ~ age, family=binomial, data=CancerPoumon)
+res_log_quanti3
+
+res_log_quanti4 <- glm(statut_cas_temoin ~ age*imc , family=binomial, data=CancerPoumon)
+res_log_quanti4
+
+res_log_quanti5 <- glm(statut_cas_temoin ~ age:imc , family=binomial, data=CancerPoumon)
+res_log_quanti5
+```
+
+$ln(odds(\text{statut_cas_temoin=1 | } age=x_1, imc=x_2))=\mu + \beta_{age} \times x_1 + \beta_{imc} \times x_2$
+$ln(odds(\text{statut_cas_temoin=1 | } imc=x))=\mu + \beta_{imc} \times x$
+$ln(odds(\text{statut_cas_temoin=1 | } age=x))=\mu + \beta_{age} \times x$
+
+```{r}
+confint(res_log_quanti)
+
+confint(res_log_quanti2)
+
+confint(res_log_quanti3)
+
+confint(res_log_quanti4)
+
+confint(res_log_quanti5)
+
+anova(res_log_quanti, res_log_quanti2)
+anova(res_log_quanti, res_log_quanti3)
+anova(res_log_quanti4, res_log_quanti)
+anova(res_log_quanti, res_log_quanti5)
+
+AIC(res_log_quanti, res_log_quanti2, res_log_quanti3, res_log_quanti4, res_log_quanti5)
+```
+
+Les modèle avec age et imc sont des meilleurs modèle !
+
+Le meilleur modèle est celui avec age + imc. On va donc garder celui et interpréter les résultat de ce modèle :
+
+```{r}
+confint(res_log_quanti)
+```
+$\beta_{age} \in [0.084, 0.133]$
+$\beta_{imc} \in [-0.182, -0.070]$
+
+- A imc fixé, avoir un age plus élevé de 1 unité (1 ans) va multiplier l'odds d'avoir un cancer du poumon par au moins $e^{0.084} = 1.088$ et au plus $e^{0.133} = 1.142$.
+
+- A age fixé, avoir un imc plus élevé de 1 unité va multiplier l'odds d'avoir un cancer du poumon par au moins $e^{-0.182} = 0.834$ et au plus $e^{-0.070} = 0.932$
+
+$0.084 \leq ln(\frac{odds(statut-cas-temoin=1 \text{ | } age=x_1+1, imc=x_2)}{odds(statut-cas-temoin=1 \text{ | } age=x_1, imc=x_2)}) \leq 0.133$
+
+$-0.182 \leq ln(\frac{odds(statut-cas-temoin=1 \text{ | } age=x_1, imc=x_2+1)}{odds(statut-cas-temoin=1 \text{ | } age=x_1, imc=x_2)}) \leq -0.070$
+
+Un patient avec un âge plus élevé augmente significativement le risque d'avoir un cancer du poumon, "tandis qu'un patient avec un IMC plus élevé diminue significativement ce risque."
+
+--> Donc l'age est un potentiel facteur de risque.
+
+
+
+
 
 # Régression logistique avec covariable qualitative
 
@@ -27,9 +191,6 @@ output: pdf_document
 
 # Faire des annova et des tests et Procédures de sélection de modèles (forward, backward, stepwise) 
 # (Il en parle aussi dans le tp)
-
-# On peut tenter une ou deux régression linéaire j'ai vu qu'il en parle aussi dans l'énoncé de tp
-# juste pourmontrer que c'est nul je pense
 
 # Dans son énoncé de TP y a : Quelques statistiques qui mesurent la performance du modèle
 # ducoup je pense faut qu'on regarde les performance des modèle ça peut être bien
