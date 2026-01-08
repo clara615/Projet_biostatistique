@@ -1,0 +1,31 @@
+---
+title: "Untitled"
+author: "Clara Gamberdello, Karla Pem"
+date: "2026-01-08"
+output: html_document
+---
+
+-   ***Dans toute cette étude les intervalles de confiance et les
+    conclusions statistique se feront avec une confiance de 95%.***
+
+```{r, include=FALSE}
+library(ggplot2)
+library(dplyr)
+library(stringr)
+library(MASS)
+```
+
+# Description du jeu de donnée et des variables données manquantes
+# Quelques statistiques descriptives 
+
+## Régression logistique 
+# Régression logistique : cancer/tabac (K)
+# Régression logistique : cancer quantitaive -> age facteur de risque (C à déjà fait)
+# Régression logistique : cancer/IMC -> qualitative (K)
+# Régression logistique : cancer/tabac exposition pro, exposition domestique, (age), brochopneumo (C)
+# Logistique multivarié AIC (prédiction sur cancer) -> meilleur (K)
+
+## Polytomique (on garde cas-témoins)
+# Polytomique ordonné : tabac AIC (C à déjà fait) 
+# polytomique ordonné : Exposition pro / sexe, région, age, niveau d'études, cas-témoins (K)
+# polytomique ordonné : Exposition pro AIC (C)
