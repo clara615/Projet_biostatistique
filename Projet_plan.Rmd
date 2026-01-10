@@ -16,7 +16,7 @@ library(MASS)
 ```
 
 # Description du jeu de donnée et des variables données manquantes
-# Quelques statistiques descriptives 
+# Quelques statistiques descriptives
 
 ## Régression logistique 
 # Régression logistique : cancer/tabac (K)
