@@ -199,7 +199,7 @@ $\text{Variation du log-odds : } \quad \ln(\text{odds}(Y=1 \mid x_j + 1)) - \ln(
 
 Pour une interprétation plus intuitive, on peut calculer $e^{\beta_j}$ qui correspond à l'odds ratio, il représente le facteur multiplicatif appliqué aux odds de Y=1 pour une augmentation de $x_j$.
 
-Pour pouvoir réaliser nos modèles nous changeons la variable statut_cas_temoins pour la recoder en variable binaire
+Pour pouvoir réaliser nos modèles nous changeons la variable statut_cas_temoins pour la recoder en variable binaire :
 
 ```{r}
 CancerPoumon$statut_cas_temoin <- ifelse(CancerPoumon$statut_cas_temoin=="Cas", 1, 0)
@@ -208,6 +208,7 @@ CancerPoumon$statut_cas_temoin <- ifelse(CancerPoumon$statut_cas_temoin=="Cas", 
 ### Modèle univarié
 
 #### Tabagisme \newline
+
 
 Nous réalisons un modèle univarié avec la variable qualitative tabagisme, en effet c'est la variable qui nous parait être la plus logique dans le risque d'appartition du cancer.
 
@@ -222,13 +223,13 @@ Nous observons nos résultats avec la modalité ancen fumeur comme modalité de 
 
 Modalité "Fumeur actuel" :
 
-$1.272 \leq ln\Big(\frac{odds(statut-cas-temoin=1 \text{ | } tabagisme=Fumeur actuel)}{odds(statut-cas-temoin=1 \text{ | } tabagisme=Ancien fumeur)}\Big) \leq 2.130$
+$$1.272 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } tabagisme=Fumeur\_actuel)}{odds(statut\_cas\_temoin=1 \text{ | } tabagisme=Ancien\_fumeur)}\Big) \leq 2.130$$
 
 Etre fumeur actuel, plutôt qu’ancien fumeur, multiplie l'odds d'avoir un cancer du poumon par au moins $exp(1.272) = 3.57$ et au plus $exp(2.130) = 8.41$.
 
 Modalité "Jamais" :
 
-$-1.401 \leq ln\Big(\frac{odds(statut-cas-temoin=1 \text{ | } tabagisme=Jamais)}{odds(statut-cas-temoin=1 \text{ | } tabagisme=Ancien fumeur)}\Big) \leq -0.283$
+$$-1.401 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } tabagisme=Jamais)}{odds(statut\_cas\_temoin=1 \text{ | } tabagisme=Ancien\_fumeur)}\Big) \leq -0.283$$
 
 N’avoir jamais fumé, plutôt qu’être ancien fumeur, divise l'odds d'avoir un cancer du poumon par au moins $exp(-1.401) = 0.25$ et au plus $exp(-0.283) = 0.75$.
 
@@ -236,16 +237,17 @@ Nous pouvons donc en conclure que le tabagisme est un facteur de risque d'appari
 
 #### IMC \newline
 
+
 Au vu du boxplot obtenue nous réalisons un modèle univarié avec IMC comme variable explicative, nous affichons également l'intervalle de confiance associé.
 
 ```{r}
 # Logistique cancer/imc
-reslt_imc=glm(statut_cas_temoin~imc, family= binomial, data=CancerPoumon)
+reslt_imc <- glm(statut_cas_temoin~imc, family= binomial, data=CancerPoumon)
 summary(reslt_imc)
 confint(reslt_imc)
 ```
 
-$-0.189 \leq ln(\frac{odds(statut-cas-temoin = 1 \text{ | } imc=x+1)}{odds(statut-cas-temoin=1 | imc = x)}) \leq -0.085$
+$$-0.189 \leq ln\Big(\frac{odds(statut\_cas\_temoin = 1 \text{ | } imc=x+1)}{odds(statut\_cas\_temoin=1 | imc=x)}\Big) \leq -0.085$$
 
 Une unité de plus sur l'imc, divise l'odds d'avoir un cancer du poumon par au moins $exp(-0.189) = 0.83$ et au plus $exp(-0.085) = 0.92$.
 
@@ -253,11 +255,12 @@ Ainsi le fait d'avoir un imc plus élevé semble avoir un effet protecteur sur l
 
 #### Exposition professionnelle à la fumée \newline
 
+
 Nous observons ensuite le modèle univarié avec la variable exposition professionnelle.
 
 ```{r}
 # Logistique cancer/exposition pro
-reslt_exp=glm(statut_cas_temoin~exposition_professionnelle, family= binomial, data=CancerPoumon)
+reslt_exp <- glm(statut_cas_temoin~exposition_professionnelle, family= binomial, data=CancerPoumon)
 summary(reslt_exp)
 confint(reslt_exp)
 ```
@@ -266,13 +269,13 @@ Nous analysons selon la variable de référence "aucune exposition".
 
 Modalité : Exposition faible
 
-$0.596 \leq ln(\frac{odds(statut-cas-temoin=1 \text{ | } Exposition pro=faible)}{odds(statut-cas-temoin=1 \text{ | } exposition pro=aucune)}) \leq 1.450$
+$$0.596 \leq ln(\frac{odds(statut\_cas\_temoin=1 \text{ | } Exposition\_pro=faible)}{odds(statut\_cas\_temoin=1 \text{ | } exposition\_pro=aucune)}) \leq 1.450$$
 
 Avoir une exposition professionnelle faible à la fumée plutôt que d'être exposée à aucune fumée, multiplie l'odds d'avoir un cancer du poumon par au moins $exp(0.596) = 1.81$ et au plus $exp(1.450) = 4.26$.
 
 Modalité : Exposition importante
 
-$1.672 \leq ln(\frac{odds(statut-cas-temoin=1 \text{ | } Exposition pro=importante)}{odds(statut-cas-temoin=1 \text{ | } exposition pro=aucune)}) \leq 2.637$
+$$1.672 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } Exposition\_pro=importante)}{odds(statut\_cas\_temoin=1 \text{ | } exposition\_pro=aucune)}\Big) \leq 2.637$$
 
 Avoir une exposition professionnelle importante à la fumée plutôt que d'être exposée à aucune fumée, multiplie l'odds d'avoir un cancer du poumon par au moins $exp(1.672) = 5.32$ et au plus $exp(2.637) = 13.97$.
 
@@ -280,18 +283,19 @@ Ce que nous attendions se vérifie, l'exposition professionnelle à la fumée se
 
 #### Exposition domestique à la fumée \newline
 
+
 Enfin nous nous proposons de faire un modèle avec la variable exposition domestique à la fumée.
 
 ```{r}
 # Logistique cancer/exposition domestique
-reslt_exd=glm(statut_cas_temoin~exposition_domestique_fumee, family= binomial, data=CancerPoumon)
+reslt_exd <- glm(statut_cas_temoin~exposition_domestique_fumee, family= binomial, data=CancerPoumon)
 summary(reslt_exd)
 confint(reslt_exd)
 ```
 
 Modalité : Exposition importante
 
-$0.253 \leq ln(\frac{odds(statut-cas-temoin=1 \text{ | } Exposition domestique=importante)}{odds(statut-cas-temoin=1 \text{ | } exposition domestique=aucune)}) \leq 0.988$
+$$0.253 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } Exposition\_domestique=importante)}{odds(statut\_cas\_temoin=1 \text{ | } exposition\_domestique=aucune)}\Big) \leq 0.988$$
 
 Avoir une exposition domestique importante à la fumée plutôt que d'être exposée à aucune fumée, multiplie l'odds d'avoir un cancer du poumon par au moins $exp(0.253) = 1.287$ et au plus $exp(0.988) = 2.68$.
 
@@ -304,6 +308,7 @@ Nous allons donc créer des modèles multivariés.
 ### Modèles multivariés
 
 #### Avec les variables quantitatives \newline
+
 
 On va maintenant tester le modèle additif avec les variables age et imc.
 On testera aussi le modèle avec un effet d’interaction entre age et imc.
@@ -329,17 +334,18 @@ Les intervalles de confiance obtenus sont les suivant : $\beta_{age} \in [0.084,
 
 Interpretation :
 
-$0.084 \leq ln\Big(\frac{odds(statut-cas-temoin=1 \text{ | } age=x_1+1 \text{, } imc=x_2)}{odds(statut-cas-temoin=1 \text{ | } age=x_1 \text{, } imc=x_2)}\Big) \leq 0.133$
+$$0.084 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } age=x_1+1 \text{, } imc=x_2)}{odds(statut\_cas\_temoin=1 \text{ | } age=x_1 \text{, } imc=x_2)}\Big) \leq 0.133$$
 
 A imc fixé, avoir un âge plus élevé de 1 unité (1 ans), va multiplier l'odds d'avoir un cancer du poumon par au moins $e^{0.084} = 1.088$ et au plus $e^{0.133} = 1.142$.
 
-$-0.182 \leq ln\Big(\frac{odds(statut-cas-temoin=1 \text{ | } age=x_1 \text{, } imc=x_2+1)}{odds(statut-cas-temoin=1 \text{ | } age=x_1 \text{, } imc=x_2)}\Big) \leq -0.070$
+$$-0.182 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } age=x_1 \text{, } imc=x_2+1)}{odds(statut\_cas\_temoin=1 \text{ | } age=x_1 \text{, } imc=x_2)}\Big) \leq -0.070$$
 
 A age fixé, avoir un imc plus élevé de 1 unité, va diviser l'odds d'avoir un cancer du poumon par au moins $e^{0.070} = 1.072$ et au plus $e^{0.182} = 1.20$.
 
 Un patient avec un âge plus élevé augmente significativement l'odds d'avoir un cancer du poumon, tandis qu'un patient avec un IMC plus élevé diminue significativement cet odds.
 
 #### Avec toutes les variables \newline
+
 
 Nous souhaitons trouvé avec le critère AIC le meilleur modèle.
 Nous réalisons donc un modèle complet avec toutes les variables.
@@ -362,7 +368,7 @@ confint(modele_complet_2)
 
 Nous constatons ici que toutes choses égales par ailleurs les variables age, tabagisme exposition professionnelle niveau d'étude imc et bronchopneumopathie chronique sont séparément significatives nous avons :
 
-$0.883 \leq ln(\frac{odds(statut-cas-temoin=1 \text{ | } brochopneumo =oui)}{odds(statut-cas-temoin=1 \text{ | } bronchopneumo=non)}) \leq 1.942$
+$$0.883 \leq ln\Big(\frac{odds(statut\_cas\_temoin=1 \text{ | } brochopneumo=oui \text{, } age \text{, } sexe \text{, } tabagisme \text{, } expo\_pro \text{,... })}{odds(statut\_cas\_temoin=1 \text{ | } bronchopneumo=non \text{, } age \text{, } sexe \text{, } tabagisme \text{, } expo\_pro \text{,... })}\Big) \leq 1.942$$
 
 Toutes choses égales par ailleurs, souffrir de bronchopneumopathie chronique multiplie l'odds d'avoir un cancer du poumon par au moins $exp(0.883) = 2.41$ et au plus $exp(1.942) = 6.97$.
 
@@ -376,6 +382,8 @@ L’imc est également associé à une diminution significative du risque dans c
 En revanche, le sexe masculin, le niveau d’études secondaire et l’exposition domestique à la fumée ne sont pas significativement associés au risque, leurs intervalles de confiance incluant la valeur nulle.
 
 ## Régression polytomique ordonné
+
+Dans cette partie, nous nous sommes permis d’inverser le modèle, c’est-à-dire de considérer la variable statut_cas_temoin comme variable explicative, afin de pouvoir traiter des variables catégorielles ordinales comme variables à expliquer. Cela est possible ici, car l’estimation des paramètres dans le modèle $Y \sim E, F$ est la même que dans le modèle $E \sim Y, F$.
 
 On appelle modèle polytomique ordonnée le modèle défini par :
 
@@ -398,6 +406,7 @@ Il faut également faire attention lors de l'interprétation des coefficients a 
 
 #### Meilleur modèle avec l'AIC sur Exposition professionnelle \newline
 
+
 On va maintenant regarder un modèle avec toute les variables de la table, sauf les variables "X" et "id_sujet" qui sont les 2 même et qui ne sont pas intéressante.
 Pour choisir le meilleur modèle on utilise la fonction "stepAIC", pour prédire "exposition_professionnelle" qui a pour modalités "Aucune exposition" $<$ "Exposition faible" $<$ "Exposition importante".
 
@@ -419,9 +428,9 @@ confint(res_poly2)
 
 Interpretation :
 
-$-1.893 \leq -ln(\frac{odds(expo-pro \leq Exposition faible \text{ | } statut=Temoin)}{odds(tabagisme \leq Fumeur actuel \text{ | } statut=Cas)}) \leq -1.218$
+$$-1.893 \leq -ln\Big(\frac{odds(expo\_pro \leq Exposition\_faible \text{ | } statut=Temoin)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } statut=Cas)}\Big) \leq -1.218$$
 
-$1.218 \leq ln(\frac{odds(expo-pro \leq Exposition faible \text{ | } statut=Temoin)}{odds(tabagisme \leq Fumeur actuel \text{ | } statut=Cas)}) \leq 1.893$
+$$1.218 \leq ln\Big(\frac{odds(expo\_pro \leq Exposition\_faible \text{ | } statut=Temoin)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } statut=Cas)}\Big) \leq 1.893$$
 
 Par rapport aux cas, les témoins ont un odds d'être dans une catégorie d'exposition professionnelle inférieure ou égale à Exposition faible multiplié par au moins $exp(1.218) = 3.380$ et au plus$exp(1.893) = 6.639$.
 
@@ -429,6 +438,7 @@ Ainsi les personnes atteintes de cancer du poumon sont plus significativement pl
 Nous pouvons donc confirmer l'interpétation réalisée précédemment.
 
 #### Meilleur modèle avec l'AIC sur tabagisme \newline
+
 
 On va mainatenant essayer de prédire la variable Y="tabagisme" qui a trois modalités ordonnées : "Ancien fumeur" $<$ "Fumeur actuel" $<$ "Jamais" : ou "Jamais" $<$ "Ancien fumeur" $<$ "Fumeur actuel".
 
@@ -452,17 +462,17 @@ Interpretation des coefficients :
 
 **Pour la variable "statut_cas_temoin" :**
 
-$0.025 \leq -ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region \text{, } statut=Temoin)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region \text{, } statut=Cas)}) \leq 0.666$
+$$0.025 \leq -ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region \text{, } statut=Temoin)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region \text{, } statut=Cas)}\Big) \leq 0.666$$
 
-$-0.666 \leq ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region \text{, } statut=Temoin)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region \text{, } statut=Cas)})\leq -0.025$
+$$-0.666 \leq ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region \text{, } statut=Temoin)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region \text{, } statut=Cas)}\Big) \leq -0.025$$
 
 À imc et région fixés fixé, appartenir aux témoins, plutôt qu'aux cas divise l'odds d'être dans une catégorie de tabagisme inférieure ou égale à Fumeur actuel par au moins $exp(-0.666) = 0.514$ et au plus $exp(-0.025) = 0.975$.
 
 **Pour la variable "imc" :**
 
-$-0.101 \leq -ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x+1 \text{, } region \text{, } statut)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region \text{, } statut)}) \leq -0.012$
+$$-0.101 \leq -ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x+1 \text{, } region \text{, } statut)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region \text{, } statut)}\Big) \leq -0.012$$
 
-$0.012 \leq ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x+1 \text{, } region \text{, } statut)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region \text{, } statut)}) \leq 0.101$
+$$0.012 \leq ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x+1 \text{, } region \text{, } statut)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region \text{, } statut)}\Big) \leq 0.101$$
 
 A région et statut_cas_temoin fixé, avoir un imc d'une unité en plus, multiplie l'odds d'être dans une catégorie de tabagisme inférieure ou égale à Fumeur actuel par au moins $exp(0.012) = 1.012$ et au plus $exp(0.101) = 1.106$.
 
@@ -470,17 +480,17 @@ A région et statut_cas_temoin fixé, avoir un imc d'une unité en plus, multipl
 
 Pour la modalité "Haut-de-france" :
 
-$-0.859 \leq -ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Haut-de-france \text{, } statut)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Centre-Val-de-Loire \text{, } statut)}) \leq -0.092$
+$$-0.859 \leq -ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Haut\_de\_france \text{, } statut)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Centre\_Val\_de-Loire \text{, } statut)}\Big) \leq -0.092$$
 
-$0.092 \leq ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Haut-de-france \text{, } statut)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Centre-Val-de-Loire \text{, } statut)}) \leq 0.859$
+$$0.092 \leq ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Haut\_de\_france \text{, } statut)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Centre\_Val\_de\_Loire \text{, } statut)}\Big) \leq 0.859$$
 
 A imc et statut_cas_temoin fixé, habité dans la région Haut-de-france, plutôt que dans la région Centre-Val-de-Loire multiplie l'odds d'être dans une catégorie de tabagisme inférieure ou égale à Fumeur actuel par au moins $exp(0.092) = 1.096$ et au plus $exp(0.859) = 2.360$.
 
 Pour la modalité "Ile-de-France" :
 
-$-0.803 \leq -ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Ile-de-France  \text{, } statut)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Centre-Val-de-Loire \text{, } statut)}) \leq -0.058$
+$$-0.803 \leq -ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Ile\_de\_France  \text{, } statut)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Centre\_Val\_de\_Loire \text{, } statut)}\Big) \leq -0.058$$
 
-$0.058 \leq ln(\frac{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Ile-de-France  \text{, } statut)}{odds(tabagisme \leq Fumeur actuel \text{ | } imc=x \text{, } region=Centre-Val-de-Loire \text{, } statut)}) \leq 0.803$
+$$0.058 \leq ln\Big(\frac{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Ile\_de\_France  \text{, } statut)}{odds(tabagisme \leq Fumeur\_actuel \text{ | } imc=x \text{, } region=Centre\_Val\_de\_Loire \text{, } statut)}\Big) \leq 0.803$$
 
 A imc et statut_cas_temoin fixé, habité dans la région Ile-de-France, plutôt que dans la région Centre-Val-de-Loire multiplie l'odds d'être dans une catégorie de tabagisme inférieure ou égale à Fumeur actuel par au moins $exp(0.058) = 1.060$ et au plus $exp(0.803) = 2.232$.
 
@@ -488,7 +498,7 @@ En conclusion, le meilleur modèle au sens de l’AIC montre que le niveau de ta
 Toutes choses égales par ailleurs, le statut cas/témoin influence la répartition dans les catégories de tabagisme, l’IMC est lié au niveau de tabagisme, et il existe des différences régionales marquées.
 Ces résultats indiquent que le tabagisme est qu’il est lié au cancer mais également à d'autres facteurs.
 
-
+Meilleurs modèle + phrases interaction ?
 ```{r}
 AIC(reslt, reslt_imc, reslt_exp, reslt_exd, res_log_quanti3, modele_complet_2, res_poly2, res_poly4)
 ```
