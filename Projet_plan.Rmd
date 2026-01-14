@@ -3,8 +3,8 @@ title: 'Projet de Biostatistiques : Cancer du poumon'
 author: "Clara Gamberdello, Karla Pem"
 date: "2026-01-08"
 output:
-  html_document: default
   pdf_document: default
+  html_document: default
 editor_options:
   markdown:
     wrap: sentence
