@@ -149,8 +149,8 @@ p9 <- ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw() 
 
-(p1 | p2 ) 
-(p4 | p6 ) 
+(p1 | p2 )
+(p4 | p6 )
 (p5 | p3 )
 (p9 | p7 )
 p8
