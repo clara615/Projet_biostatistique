@@ -13,7 +13,7 @@ editor_options:
 # Introduction
 
 Dans le cadre d'un projet de biostatistique nous avons étudié un jeu de données provenant d'une étude cas témoins portant sur le cancer bronchique primitif, ou cancer du poumon.
-Nous considérons, les cas : patients présentant un cancr du poumon confirmé et les témoins : sujet sans cancer recrutés dans les mêmes établissements de soins.
+Nous considérons, les cas : patients présentant un cancer du poumon confirmé et les témoins : sujet sans cancer recrutés dans les mêmes établissements de soins.
 Nous cherchons a établir des liens entre le risque de cancer du poumon et différents facteurs tel que le tabagisme l'exposition a la fumée domestique ou professionnelle le sexe ou la bronchopneumopathie chronique entre autres.
 
 ***Dans toute cette étude les intervalles de confiance et les conclusions statistique se feront avec une confiance de 95%.***
@@ -305,12 +305,12 @@ Comme pour l'exposition professionnelle, l'exposition domestique semble être un
 #### Niveau d'étude \newline
 
 ```{r}
-reslt_etu <- glm(statut_cas_temoin~niveau_etudes, family= binomial, data=CancerPoumon)
+reslt_etu <- glm(statut_cas_temoin ~ niveau_etudes, family= binomial, data=CancerPoumon)
 summary(reslt_etu)
 confint(reslt_etu)
 ```
 
-En interprétant comme précédemment on observe que le fait d'avoir un niveau d'étude supérieur par rapport a un niveau d'étude primaire semble augmenter significativement l'odds d'avoir un cancer, avoir un niveau d'étude secondaire par rapport à un niveau primaire est en revanche moins significatif. 
+En interprétant comme précédemment, on observe que le fait d'avoir un niveau d'étude supérieur par rapport à un niveau d'étude primaire semble diminuer significativement l'odds d'avoir un cancer, de même, avoir un niveau d'étude secondaire par rapport à un niveau primaire diminue également l'odds, mais de façon moins significative.
 
 #### Age \newline
 
@@ -321,7 +321,7 @@ summary(reslt_age)
 confint(reslt_age)
 ```
 
-Ici de nouveau avec les mêmes interprétations que plus haut nous pouvons conclure qu'augementer l'age de 1 multiplie l'odds d'avoir un cancer du poumon d'au moins exp(0.08) = 1.08 et d'au plus exp(0.13) = 1.14.
+Ici de nouveau avec les mêmes interprétations que plus haut, nous pouvons conclure qu'augementer l'age de 1 ans multiplie l'odds d'avoir un cancer du poumon d'au moins $e^{0.08} = 1.08$ et d'au plus $e^{0.13} = 1.14$.
 
 #### Bronchopneumopathie chronique \newline
 
@@ -342,10 +342,10 @@ summary(reslt_reg)
 confint(reslt_reg)
 ```
 
-Ici de nouveau nous obtenons des p-value élevées et 0 est contenu dans les intervalles de confiance. 
+Ici nous obtenons des p-value élevées et 0 est contenu dans les intervalles de confiance. 
 
 Nous avons réalisés des modèles univariés qui nous ont permis d'étudier séparément la potentielle association entre les facteurs de risques possibles et l'apparition d'un cancer du poumon.
-Cependant il est possible que ces associations soit influencés par des facteurs dit confondant, autrement dit des variables pouvant influencer les variables explicatives et la variable à expliquer.
+Cependant, il est possible que ces associations soit influencés par des facteurs dit confondant, autrement dit des variables pouvant influencer les variables explicatives et la variable à expliquer.
 Nous allons donc créer des modèles multivariés.
 
 ### Modèles multivariés
@@ -541,7 +541,7 @@ En conclusion, le meilleur modèle au sens de l’AIC montre que le niveau de ta
 Toutes choses égales par ailleurs, le statut cas/témoin influence la répartition dans les catégories de tabagisme, l’IMC est lié au niveau de tabagisme, et il existe des différences régionales marquées.
 Ces résultats indiquent que le tabagisme est qu’il est lié au cancer mais également à d'autres facteurs.
 
-Durant ce projet nous avons également essayé de faire différents modèles avec interractions mais les résultats n'étant jamais concluant et significatifs nous ne les avons pas inclus dans ce raaport. 
+Durant ce projet nous avons également essayé de faire différents modèles avec interractions mais les résultats n'étant jamais concluant et significatifs nous ne les avons pas inclus dans ce rapport. 
 
 ```{r}
 AIC(reslt, reslt_imc, reslt_exp, reslt_exd, reslt_etu, reslt_reg, reslt_age, reslt_bron, res_log_quanti3, modele_complet_2, res_poly2, res_poly4)
