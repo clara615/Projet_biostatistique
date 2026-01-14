@@ -3,8 +3,8 @@ title: 'Projet de Biostatistiques : Cancer du poumon'
 author: "Clara Gamberdello, Karla Pem"
 date: "2026-01-08"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 editor_options:
   markdown:
     wrap: sentence
@@ -24,6 +24,7 @@ library(dplyr)
 library(stringr)
 library(MASS)
 library(esquisse)
+library(patchwork)
 ```
 
 ### Description du jeu de donnée
@@ -69,7 +70,7 @@ CancerPoumon <- CancerPoumon %>%
 ```{r, echo=FALSE}
 par(mfrow=c(3,3))
 
-ggplot(CancerPoumon) +
+p1 <- ggplot(CancerPoumon) +
   aes(x = age, y = statut_cas_temoin, fill = statut_cas_temoin) +
   geom_boxplot() +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -78,7 +79,7 @@ ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p2 <- ggplot(CancerPoumon) +
   aes(x = imc, y = statut_cas_temoin, fill = statut_cas_temoin) +
   geom_boxplot() +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -87,7 +88,7 @@ ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p3 <- ggplot(CancerPoumon) +
   aes(x = region, fill = statut_cas_temoin) +
   geom_bar(position = "dodge2") +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -96,7 +97,7 @@ ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p4 <- ggplot(CancerPoumon) +
   aes(x = bronchopneumopathie_chronique, fill = statut_cas_temoin) +
   geom_bar(position = "dodge2") +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -105,7 +106,7 @@ ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p5 <- ggplot(CancerPoumon) +
   aes(x = sexe, fill = statut_cas_temoin) +
   geom_bar(position = "dodge") +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -113,7 +114,7 @@ ggplot(CancerPoumon) +
   labs(x = "sexe", title = "Répartition du sexe dans l'étude", fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p6 <- ggplot(CancerPoumon) +
   aes(x = tabagisme, fill = statut_cas_temoin) +
   geom_bar(position = "dodge") +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -121,7 +122,7 @@ ggplot(CancerPoumon) +
   labs(fill = "Individus", title = "Tabagisme dans l'étude") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p7 <- ggplot(CancerPoumon) +
   aes(x = exposition_domestique_fumee, fill = statut_cas_temoin) +
   geom_bar(position = "dodge") +
   scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -130,7 +131,7 @@ ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p8 <- ggplot(CancerPoumon) +
   aes(x = exposition_professionnelle, fill = statut_cas_temoin) +
   geom_bar(position = "dodge") +
    scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -139,7 +140,7 @@ ggplot(CancerPoumon) +
   fill = "Individus") +
   theme_bw()
 
-ggplot(CancerPoumon) +
+p9 <- ggplot(CancerPoumon) +
   aes(x = niveau_etudes, fill = statut_cas_temoin) +
   geom_bar(position = "dodge") +
    scale_fill_manual(values = c(Cas = "#A80E03", 
@@ -147,6 +148,10 @@ ggplot(CancerPoumon) +
   labs(x = "Niveau d'études", title = "Niveau d'étude des individus", 
   fill = "Individus") +
   theme_bw() 
+
+(p1 | p2 | p3) 
+(p4 | p5 | p6) 
+(p7 | p8 | p9)
 ```
 
 Nous réalisons donc différents barplots et boxplots pour nos variables.
